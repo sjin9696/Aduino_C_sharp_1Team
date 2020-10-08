@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnShutDown = new System.Windows.Forms.Button();
             this.btnWCSelect = new System.Windows.Forms.Button();
             this.btnWOSelect = new System.Windows.Forms.Button();
             this.btnWOinsert = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@
             this.ucSelectWorkOrder1 = new MESProject.View.UCSelectWorkOrder();
             this.ucSelectWorkComplete1 = new MESProject.View.UCSelectWorkComplete();
             this.ucInsertWorkOrder1 = new MESProject.View.UCInsertWorkOrder();
-            this.btnShutDown = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -63,6 +63,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(150, 661);
             this.panel1.TabIndex = 0;
+            // 
+            // btnShutDown
+            // 
+            this.btnShutDown.BackColor = System.Drawing.Color.Brown;
+            this.btnShutDown.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnShutDown.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnShutDown.FlatAppearance.BorderSize = 0;
+            this.btnShutDown.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
+            this.btnShutDown.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
+            this.btnShutDown.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
+            this.btnShutDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShutDown.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShutDown.ForeColor = System.Drawing.Color.White;
+            this.btnShutDown.Location = new System.Drawing.Point(0, 601);
+            this.btnShutDown.Name = "btnShutDown";
+            this.btnShutDown.Size = new System.Drawing.Size(150, 60);
+            this.btnShutDown.TabIndex = 6;
+            this.btnShutDown.Text = "종료";
+            this.btnShutDown.UseVisualStyleBackColor = false;
+            this.btnShutDown.Click += new System.EventHandler(this.btnShutDown_Click);
             // 
             // btnWCSelect
             // 
@@ -164,7 +184,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 21);
             this.label4.TabIndex = 4;
-            this.label4.Text = "지시자 :";
+            this.label4.Text = "담당자 :";
             // 
             // label3
             // 
@@ -255,31 +275,12 @@
             this.ucInsertWorkOrder1.Size = new System.Drawing.Size(834, 581);
             this.ucInsertWorkOrder1.TabIndex = 0;
             // 
-            // btnShutDown
-            // 
-            this.btnShutDown.BackColor = System.Drawing.Color.Brown;
-            this.btnShutDown.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnShutDown.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnShutDown.FlatAppearance.BorderSize = 0;
-            this.btnShutDown.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
-            this.btnShutDown.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
-            this.btnShutDown.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
-            this.btnShutDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShutDown.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShutDown.ForeColor = System.Drawing.Color.White;
-            this.btnShutDown.Location = new System.Drawing.Point(0, 601);
-            this.btnShutDown.Name = "btnShutDown";
-            this.btnShutDown.Size = new System.Drawing.Size(150, 60);
-            this.btnShutDown.TabIndex = 6;
-            this.btnShutDown.Text = "종료";
-            this.btnShutDown.UseVisualStyleBackColor = false;
-            this.btnShutDown.Click += new System.EventHandler(this.btnShutDown_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.ControlBox = false;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
