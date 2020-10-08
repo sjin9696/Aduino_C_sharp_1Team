@@ -26,3 +26,17 @@ C:\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.
 C:\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.csproj.CoreCompileInputs.cache
 C:\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.exe
 C:\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.pdb
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\bin\Debug\MESProject.exe.config
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\bin\Debug\MESProject.exe
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\bin\Debug\MESProject.pdb
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.csprojAssemblyReference.cache
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.Form1.resources
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.Properties.Resources.resources
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.View.UCInsertWorkOrder.resources
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.View.UCMainHome.resources
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.View.UCSelectWorkComplete.resources
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.View.UCSelectWorkOrder.resources
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.csproj.GenerateResource.cache
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.csproj.CoreCompileInputs.cache
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.exe
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.pdb

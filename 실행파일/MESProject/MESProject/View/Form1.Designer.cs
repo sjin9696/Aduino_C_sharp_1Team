@@ -71,8 +71,8 @@
             this.btnShutDown.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnShutDown.FlatAppearance.BorderSize = 0;
             this.btnShutDown.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
-            this.btnShutDown.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
-            this.btnShutDown.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
+            this.btnShutDown.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
+            this.btnShutDown.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnShutDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShutDown.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShutDown.ForeColor = System.Drawing.Color.White;
@@ -91,7 +91,7 @@
             this.btnWCSelect.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnWCSelect.FlatAppearance.BorderSize = 0;
             this.btnWCSelect.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
-            this.btnWCSelect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
+            this.btnWCSelect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnWCSelect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
             this.btnWCSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWCSelect.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -111,7 +111,7 @@
             this.btnWOSelect.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnWOSelect.FlatAppearance.BorderSize = 0;
             this.btnWOSelect.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
-            this.btnWOSelect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
+            this.btnWOSelect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnWOSelect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
             this.btnWOSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWOSelect.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,7 +131,7 @@
             this.btnWOinsert.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnWOinsert.FlatAppearance.BorderSize = 0;
             this.btnWOinsert.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
-            this.btnWOinsert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
+            this.btnWOinsert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnWOinsert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
             this.btnWOinsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWOinsert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -245,6 +245,7 @@
             // 
             // ucMainHome1
             // 
+            this.ucMainHome1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ucMainHome1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucMainHome1.Location = new System.Drawing.Point(0, 0);
             this.ucMainHome1.Name = "ucMainHome1";
@@ -284,6 +285,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.HelpButton = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
