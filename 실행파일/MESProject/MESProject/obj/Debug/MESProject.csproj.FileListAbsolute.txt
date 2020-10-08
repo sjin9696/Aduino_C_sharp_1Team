@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\MESProject\MESProject\bin\Debug\MESProject.exe.config
+C:\Users\User\Desktop\MESProject\MESProject\bin\Debug\MESProject.exe
+C:\Users\User\Desktop\MESProject\MESProject\bin\Debug\MESProject.pdb
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.csprojAssemblyReference.cache
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.Form1.resources
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.Properties.Resources.resources
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.View.UCInsertWorkOrder.resources
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.View.UCMainHome.resources
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.View.UCSelectWorkComplete.resources
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.View.UCSelectWorkOrder.resources
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.csproj.GenerateResource.cache
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.exe
+C:\Users\User\Desktop\MESProject\MESProject\obj\Debug\MESProject.pdb
