@@ -206,9 +206,9 @@
             this.lbName.ForeColor = System.Drawing.Color.White;
             this.lbName.Location = new System.Drawing.Point(654, 42);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(58, 21);
+            this.lbName.Size = new System.Drawing.Size(42, 21);
             this.lbName.TabIndex = 2;
-            this.lbName.Text = "김땡땡";
+            this.lbName.Text = "김밥";
             // 
             // lbNowDate
             // 
@@ -294,6 +294,7 @@
             this.Controls.Add(this.pnLeft);
             this.HelpButton = true;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.pnLeft.ResumeLayout(false);
             this.pnTop.ResumeLayout(false);
