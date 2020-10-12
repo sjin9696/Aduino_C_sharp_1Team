@@ -54,7 +54,7 @@ namespace MESProject
         {
             // 현재시간 타이머 - 이은수
             string s3 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            LBNowDate.Text = s3;
+            lbNowDate.Text = s3;
         }
     }
 }

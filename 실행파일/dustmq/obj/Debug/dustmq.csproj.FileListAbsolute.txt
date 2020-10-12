@@ -10,3 +10,14 @@ C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.csproj.CoreCompileInputs.cach
 C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.csproj.CopyComplete
 C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.exe
 C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.pdb
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\bin\Debug\dustmq.exe.config
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\bin\Debug\dustmq.exe
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\bin\Debug\dustmq.pdb
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\obj\Debug\dustmq.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\obj\Debug\dustmq.Form1.resources
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\obj\Debug\dustmq.Properties.Resources.resources
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\obj\Debug\dustmq.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\obj\Debug\dustmq.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\obj\Debug\dustmq.csproj.CopyComplete
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\obj\Debug\dustmq.exe
+C:\Users\User\Desktop\Project\Aduino_C_sharp_1Team\실행파일\dustmq\obj\Debug\dustmq.pdb

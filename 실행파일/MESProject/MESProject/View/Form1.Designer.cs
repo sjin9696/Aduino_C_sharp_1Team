@@ -29,42 +29,42 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.PanelLeft = new System.Windows.Forms.Panel();
+            this.pnLeft = new System.Windows.Forms.Panel();
             this.btnShutDown = new System.Windows.Forms.Button();
             this.btnWCSelect = new System.Windows.Forms.Button();
             this.btnWOSelect = new System.Windows.Forms.Button();
             this.btnWOinsert = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.PanelTop = new System.Windows.Forms.Panel();
-            this.LBOrderName = new System.Windows.Forms.Label();
-            this.LBDate = new System.Windows.Forms.Label();
-            this.LBName = new System.Windows.Forms.Label();
-            this.LBNowDate = new System.Windows.Forms.Label();
-            this.LBProgramName = new System.Windows.Forms.Label();
-            this.panelCenter = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pnTop = new System.Windows.Forms.Panel();
+            this.lbOrderName = new System.Windows.Forms.Label();
+            this.lbDate = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
+            this.lbNowDate = new System.Windows.Forms.Label();
+            this.lbProgramName = new System.Windows.Forms.Label();
+            this.pnCenter = new System.Windows.Forms.Panel();
             this.ucMainHome1 = new MESProject.View.UCMainHome();
             this.ucSelectWorkOrder1 = new MESProject.View.UCSelectWorkOrder();
             this.ucSelectWorkComplete1 = new MESProject.View.UCSelectWorkComplete();
             this.ucInsertWorkOrder1 = new MESProject.View.UCInsertWorkOrder();
-            this.PanelLeft.SuspendLayout();
-            this.PanelTop.SuspendLayout();
-            this.panelCenter.SuspendLayout();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pnLeft.SuspendLayout();
+            this.pnTop.SuspendLayout();
+            this.pnCenter.SuspendLayout();
             this.SuspendLayout();
             // 
-            // PanelLeft
+            // pnLeft
             // 
-            this.PanelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
-            this.PanelLeft.Controls.Add(this.btnShutDown);
-            this.PanelLeft.Controls.Add(this.btnWCSelect);
-            this.PanelLeft.Controls.Add(this.btnWOSelect);
-            this.PanelLeft.Controls.Add(this.btnWOinsert);
-            this.PanelLeft.Controls.Add(this.btnHome);
-            this.PanelLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelLeft.Location = new System.Drawing.Point(0, 0);
-            this.PanelLeft.Name = "PanelLeft";
-            this.PanelLeft.Size = new System.Drawing.Size(150, 661);
-            this.PanelLeft.TabIndex = 0;
+            this.pnLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
+            this.pnLeft.Controls.Add(this.btnShutDown);
+            this.pnLeft.Controls.Add(this.btnWCSelect);
+            this.pnLeft.Controls.Add(this.btnWOSelect);
+            this.pnLeft.Controls.Add(this.btnWOinsert);
+            this.pnLeft.Controls.Add(this.btnHome);
+            this.pnLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnLeft.Name = "pnLeft";
+            this.pnLeft.Size = new System.Drawing.Size(150, 661);
+            this.pnLeft.TabIndex = 0;
             // 
             // btnShutDown
             // 
@@ -163,93 +163,87 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // PanelTop
+            // pnTop
             // 
-            this.PanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(114)))), ((int)(((byte)(210)))));
-            this.PanelTop.Controls.Add(this.LBOrderName);
-            this.PanelTop.Controls.Add(this.LBDate);
-            this.PanelTop.Controls.Add(this.LBName);
-            this.PanelTop.Controls.Add(this.LBNowDate);
-            this.PanelTop.Controls.Add(this.LBProgramName);
-            this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelTop.Location = new System.Drawing.Point(150, 0);
-            this.PanelTop.Name = "PanelTop";
-            this.PanelTop.Size = new System.Drawing.Size(834, 80);
-            this.PanelTop.TabIndex = 1;
+            this.pnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(114)))), ((int)(((byte)(210)))));
+            this.pnTop.Controls.Add(this.lbOrderName);
+            this.pnTop.Controls.Add(this.lbDate);
+            this.pnTop.Controls.Add(this.lbName);
+            this.pnTop.Controls.Add(this.lbNowDate);
+            this.pnTop.Controls.Add(this.lbProgramName);
+            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTop.Location = new System.Drawing.Point(150, 0);
+            this.pnTop.Name = "pnTop";
+            this.pnTop.Size = new System.Drawing.Size(834, 80);
+            this.pnTop.TabIndex = 1;
             // 
-            // LBOrderName
+            // lbOrderName
             // 
-            this.LBOrderName.AutoSize = true;
-            this.LBOrderName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBOrderName.ForeColor = System.Drawing.Color.White;
-            this.LBOrderName.Location = new System.Drawing.Point(567, 42);
-            this.LBOrderName.Name = "LBOrderName";
-            this.LBOrderName.Size = new System.Drawing.Size(65, 21);
-            this.LBOrderName.TabIndex = 4;
-            this.LBOrderName.Text = "담당자 :";
+            this.lbOrderName.AutoSize = true;
+            this.lbOrderName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOrderName.ForeColor = System.Drawing.Color.White;
+            this.lbOrderName.Location = new System.Drawing.Point(567, 42);
+            this.lbOrderName.Name = "lbOrderName";
+            this.lbOrderName.Size = new System.Drawing.Size(65, 21);
+            this.lbOrderName.TabIndex = 4;
+            this.lbOrderName.Text = "담당자 :";
             // 
-            // LBDate
+            // lbDate
             // 
-            this.LBDate.AutoSize = true;
-            this.LBDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBDate.ForeColor = System.Drawing.Color.White;
-            this.LBDate.Location = new System.Drawing.Point(567, 9);
-            this.LBDate.Name = "LBDate";
-            this.LBDate.Size = new System.Drawing.Size(81, 21);
-            this.LBDate.TabIndex = 3;
-            this.LBDate.Text = "현재시간 :";
+            this.lbDate.AutoSize = true;
+            this.lbDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.ForeColor = System.Drawing.Color.White;
+            this.lbDate.Location = new System.Drawing.Point(567, 9);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(81, 21);
+            this.lbDate.TabIndex = 3;
+            this.lbDate.Text = "현재시간 :";
             // 
-            // LBName
+            // lbName
             // 
-            this.LBName.AutoSize = true;
-            this.LBName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBName.ForeColor = System.Drawing.Color.White;
-            this.LBName.Location = new System.Drawing.Point(654, 42);
-            this.LBName.Name = "LBName";
-            this.LBName.Size = new System.Drawing.Size(58, 21);
-            this.LBName.TabIndex = 2;
-            this.LBName.Text = "김땡땡";
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.ForeColor = System.Drawing.Color.White;
+            this.lbName.Location = new System.Drawing.Point(654, 42);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(58, 21);
+            this.lbName.TabIndex = 2;
+            this.lbName.Text = "김땡땡";
             // 
-            // LBNowDate
+            // lbNowDate
             // 
-            this.LBNowDate.AutoSize = true;
-            this.LBNowDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBNowDate.ForeColor = System.Drawing.Color.White;
-            this.LBNowDate.Location = new System.Drawing.Point(654, 9);
-            this.LBNowDate.Name = "LBNowDate";
-            this.LBNowDate.Size = new System.Drawing.Size(158, 21);
-            this.LBNowDate.TabIndex = 1;
-            this.LBNowDate.Text = "2020-10-12 12:12:12";
+            this.lbNowDate.AutoSize = true;
+            this.lbNowDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNowDate.ForeColor = System.Drawing.Color.White;
+            this.lbNowDate.Location = new System.Drawing.Point(654, 9);
+            this.lbNowDate.Name = "lbNowDate";
+            this.lbNowDate.Size = new System.Drawing.Size(158, 21);
+            this.lbNowDate.TabIndex = 1;
+            this.lbNowDate.Text = "2020-10-12 12:12:12";
             // 
-            // LBProgramName
+            // lbProgramName
             // 
-            this.LBProgramName.AutoSize = true;
-            this.LBProgramName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBProgramName.ForeColor = System.Drawing.Color.White;
-            this.LBProgramName.Location = new System.Drawing.Point(281, 21);
-            this.LBProgramName.Name = "LBProgramName";
-            this.LBProgramName.Size = new System.Drawing.Size(214, 32);
-            this.LBProgramName.TabIndex = 0;
-            this.LBProgramName.Text = "작업지시 프로그램";
+            this.lbProgramName.AutoSize = true;
+            this.lbProgramName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProgramName.ForeColor = System.Drawing.Color.White;
+            this.lbProgramName.Location = new System.Drawing.Point(281, 21);
+            this.lbProgramName.Name = "lbProgramName";
+            this.lbProgramName.Size = new System.Drawing.Size(214, 32);
+            this.lbProgramName.TabIndex = 0;
+            this.lbProgramName.Text = "작업지시 프로그램";
             // 
-            // panelCenter
+            // pnCenter
             // 
-            this.panelCenter.BackColor = System.Drawing.Color.White;
-            this.panelCenter.Controls.Add(this.ucMainHome1);
-            this.panelCenter.Controls.Add(this.ucSelectWorkOrder1);
-            this.panelCenter.Controls.Add(this.ucSelectWorkComplete1);
-            this.panelCenter.Controls.Add(this.ucInsertWorkOrder1);
-            this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCenter.Location = new System.Drawing.Point(150, 80);
-            this.panelCenter.Name = "panelCenter";
-            this.panelCenter.Size = new System.Drawing.Size(834, 581);
-            this.panelCenter.TabIndex = 2;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.pnCenter.BackColor = System.Drawing.Color.White;
+            this.pnCenter.Controls.Add(this.ucMainHome1);
+            this.pnCenter.Controls.Add(this.ucSelectWorkOrder1);
+            this.pnCenter.Controls.Add(this.ucSelectWorkComplete1);
+            this.pnCenter.Controls.Add(this.ucInsertWorkOrder1);
+            this.pnCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnCenter.Location = new System.Drawing.Point(150, 80);
+            this.pnCenter.Name = "pnCenter";
+            this.pnCenter.Size = new System.Drawing.Size(834, 581);
+            this.pnCenter.TabIndex = 2;
             // 
             // ucMainHome1
             // 
@@ -284,43 +278,49 @@
             this.ucInsertWorkOrder1.Size = new System.Drawing.Size(834, 581);
             this.ucInsertWorkOrder1.TabIndex = 0;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.panelCenter);
-            this.Controls.Add(this.PanelTop);
-            this.Controls.Add(this.PanelLeft);
+            this.Controls.Add(this.pnCenter);
+            this.Controls.Add(this.pnTop);
+            this.Controls.Add(this.pnLeft);
             this.HelpButton = true;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.PanelLeft.ResumeLayout(false);
-            this.PanelTop.ResumeLayout(false);
-            this.PanelTop.PerformLayout();
-            this.panelCenter.ResumeLayout(false);
+            this.pnLeft.ResumeLayout(false);
+            this.pnTop.ResumeLayout(false);
+            this.pnTop.PerformLayout();
+            this.pnCenter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel PanelLeft;
+        private System.Windows.Forms.Panel pnLeft;
         private System.Windows.Forms.Button btnWCSelect;
         private System.Windows.Forms.Button btnWOSelect;
         private System.Windows.Forms.Button btnWOinsert;
         private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Panel PanelTop;
-        private System.Windows.Forms.Panel panelCenter;
-        private System.Windows.Forms.Label LBProgramName;
+        private System.Windows.Forms.Panel pnTop;
+        private System.Windows.Forms.Panel pnCenter;
+        private System.Windows.Forms.Label lbProgramName;
         private View.UCInsertWorkOrder ucInsertWorkOrder1;
         private View.UCSelectWorkOrder ucSelectWorkOrder1;
         private View.UCSelectWorkComplete ucSelectWorkComplete1;
         private View.UCMainHome ucMainHome1;
-        private System.Windows.Forms.Label LBOrderName;
-        private System.Windows.Forms.Label LBDate;
-        private System.Windows.Forms.Label LBName;
-        private System.Windows.Forms.Label LBNowDate;
+        private System.Windows.Forms.Label lbOrderName;
+        private System.Windows.Forms.Label lbDate;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Label lbNowDate;
         private System.Windows.Forms.Button btnShutDown;
         private System.Windows.Forms.Timer timer1;
     }
