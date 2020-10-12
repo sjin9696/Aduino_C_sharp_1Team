@@ -47,7 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "UCInsertWorkOrder";
-            this.Size = new System.Drawing.Size(834, 561);
+            this.Size = new System.Drawing.Size(834, 581);
             this.ResumeLayout(false);
             this.PerformLayout();
 
