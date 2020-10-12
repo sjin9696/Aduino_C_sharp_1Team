@@ -20,7 +20,10 @@ namespace MESProject
             UCSelectWorkOrder uCSelectWorkOrder = new UCSelectWorkOrder();
             UCSelectWorkComplete uCSelectWorkComplete = new UCSelectWorkComplete();
             InitializeComponent();
-        }
+
+            // 현재시간 함수 호출 - 이은수
+            timer1_Tick(null, null);
+         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -45,6 +48,13 @@ namespace MESProject
         private void btnShutDown_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // 현재시간 타이머 - 이은수
+            string s3 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            LBNowDate.Text = s3;
         }
     }
 }

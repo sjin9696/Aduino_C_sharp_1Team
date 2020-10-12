@@ -28,41 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.components = new System.ComponentModel.Container();
+            this.PanelLeft = new System.Windows.Forms.Panel();
             this.btnShutDown = new System.Windows.Forms.Button();
             this.btnWCSelect = new System.Windows.Forms.Button();
             this.btnWOSelect = new System.Windows.Forms.Button();
             this.btnWOinsert = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.labelProgramName = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.PanelTop = new System.Windows.Forms.Panel();
+            this.LBOrderName = new System.Windows.Forms.Label();
+            this.LBDate = new System.Windows.Forms.Label();
+            this.LBName = new System.Windows.Forms.Label();
+            this.LBNowDate = new System.Windows.Forms.Label();
+            this.LBProgramName = new System.Windows.Forms.Label();
+            this.panelCenter = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ucMainHome1 = new MESProject.View.UCMainHome();
             this.ucSelectWorkOrder1 = new MESProject.View.UCSelectWorkOrder();
             this.ucSelectWorkComplete1 = new MESProject.View.UCSelectWorkComplete();
             this.ucInsertWorkOrder1 = new MESProject.View.UCInsertWorkOrder();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.PanelLeft.SuspendLayout();
+            this.PanelTop.SuspendLayout();
+            this.panelCenter.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // PanelLeft
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
-            this.panel1.Controls.Add(this.btnShutDown);
-            this.panel1.Controls.Add(this.btnWCSelect);
-            this.panel1.Controls.Add(this.btnWOSelect);
-            this.panel1.Controls.Add(this.btnWOinsert);
-            this.panel1.Controls.Add(this.btnHome);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(150, 661);
-            this.panel1.TabIndex = 0;
+            this.PanelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
+            this.PanelLeft.Controls.Add(this.btnShutDown);
+            this.PanelLeft.Controls.Add(this.btnWCSelect);
+            this.PanelLeft.Controls.Add(this.btnWOSelect);
+            this.PanelLeft.Controls.Add(this.btnWOinsert);
+            this.PanelLeft.Controls.Add(this.btnHome);
+            this.PanelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelLeft.Location = new System.Drawing.Point(0, 0);
+            this.PanelLeft.Name = "PanelLeft";
+            this.PanelLeft.Size = new System.Drawing.Size(150, 661);
+            this.PanelLeft.TabIndex = 0;
             // 
             // btnShutDown
             // 
@@ -161,87 +163,93 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // panel2
+            // PanelTop
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(114)))), ((int)(((byte)(210)))));
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.labelProgramName);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(150, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(834, 80);
-            this.panel2.TabIndex = 1;
+            this.PanelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(114)))), ((int)(((byte)(210)))));
+            this.PanelTop.Controls.Add(this.LBOrderName);
+            this.PanelTop.Controls.Add(this.LBDate);
+            this.PanelTop.Controls.Add(this.LBName);
+            this.PanelTop.Controls.Add(this.LBNowDate);
+            this.PanelTop.Controls.Add(this.LBProgramName);
+            this.PanelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelTop.Location = new System.Drawing.Point(150, 0);
+            this.PanelTop.Name = "PanelTop";
+            this.PanelTop.Size = new System.Drawing.Size(834, 80);
+            this.PanelTop.TabIndex = 1;
             // 
-            // label4
+            // LBOrderName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(645, 42);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 21);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "담당자 :";
+            this.LBOrderName.AutoSize = true;
+            this.LBOrderName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBOrderName.ForeColor = System.Drawing.Color.White;
+            this.LBOrderName.Location = new System.Drawing.Point(567, 42);
+            this.LBOrderName.Name = "LBOrderName";
+            this.LBOrderName.Size = new System.Drawing.Size(65, 21);
+            this.LBOrderName.TabIndex = 4;
+            this.LBOrderName.Text = "담당자 :";
             // 
-            // label3
+            // LBDate
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(645, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 21);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "현재시간 :";
+            this.LBDate.AutoSize = true;
+            this.LBDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBDate.ForeColor = System.Drawing.Color.White;
+            this.LBDate.Location = new System.Drawing.Point(567, 9);
+            this.LBDate.Name = "LBDate";
+            this.LBDate.Size = new System.Drawing.Size(81, 21);
+            this.LBDate.TabIndex = 3;
+            this.LBDate.Text = "현재시간 :";
             // 
-            // label2
+            // LBName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(732, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "김땡땡";
+            this.LBName.AutoSize = true;
+            this.LBName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBName.ForeColor = System.Drawing.Color.White;
+            this.LBName.Location = new System.Drawing.Point(654, 42);
+            this.LBName.Name = "LBName";
+            this.LBName.Size = new System.Drawing.Size(58, 21);
+            this.LBName.TabIndex = 2;
+            this.LBName.Text = "김땡땡";
             // 
-            // label1
+            // LBNowDate
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(732, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "2000-2-22";
+            this.LBNowDate.AutoSize = true;
+            this.LBNowDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBNowDate.ForeColor = System.Drawing.Color.White;
+            this.LBNowDate.Location = new System.Drawing.Point(654, 9);
+            this.LBNowDate.Name = "LBNowDate";
+            this.LBNowDate.Size = new System.Drawing.Size(158, 21);
+            this.LBNowDate.TabIndex = 1;
+            this.LBNowDate.Text = "2020-10-12 12:12:12";
             // 
-            // labelProgramName
+            // LBProgramName
             // 
-            this.labelProgramName.AutoSize = true;
-            this.labelProgramName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProgramName.ForeColor = System.Drawing.Color.White;
-            this.labelProgramName.Location = new System.Drawing.Point(281, 21);
-            this.labelProgramName.Name = "labelProgramName";
-            this.labelProgramName.Size = new System.Drawing.Size(214, 32);
-            this.labelProgramName.TabIndex = 0;
-            this.labelProgramName.Text = "작업지시 프로그램";
+            this.LBProgramName.AutoSize = true;
+            this.LBProgramName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBProgramName.ForeColor = System.Drawing.Color.White;
+            this.LBProgramName.Location = new System.Drawing.Point(281, 21);
+            this.LBProgramName.Name = "LBProgramName";
+            this.LBProgramName.Size = new System.Drawing.Size(214, 32);
+            this.LBProgramName.TabIndex = 0;
+            this.LBProgramName.Text = "작업지시 프로그램";
             // 
-            // panel3
+            // panelCenter
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.ucMainHome1);
-            this.panel3.Controls.Add(this.ucSelectWorkOrder1);
-            this.panel3.Controls.Add(this.ucSelectWorkComplete1);
-            this.panel3.Controls.Add(this.ucInsertWorkOrder1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(150, 80);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(834, 581);
-            this.panel3.TabIndex = 2;
+            this.panelCenter.BackColor = System.Drawing.Color.White;
+            this.panelCenter.Controls.Add(this.ucMainHome1);
+            this.panelCenter.Controls.Add(this.ucSelectWorkOrder1);
+            this.panelCenter.Controls.Add(this.ucSelectWorkComplete1);
+            this.panelCenter.Controls.Add(this.ucInsertWorkOrder1);
+            this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCenter.Location = new System.Drawing.Point(150, 80);
+            this.panelCenter.Name = "panelCenter";
+            this.panelCenter.Size = new System.Drawing.Size(834, 581);
+            this.panelCenter.TabIndex = 2;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // ucMainHome1
             // 
@@ -281,39 +289,40 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelCenter);
+            this.Controls.Add(this.PanelTop);
+            this.Controls.Add(this.PanelLeft);
             this.HelpButton = true;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.PanelLeft.ResumeLayout(false);
+            this.PanelTop.ResumeLayout(false);
+            this.PanelTop.PerformLayout();
+            this.panelCenter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PanelLeft;
         private System.Windows.Forms.Button btnWCSelect;
         private System.Windows.Forms.Button btnWOSelect;
         private System.Windows.Forms.Button btnWOinsert;
         private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label labelProgramName;
+        private System.Windows.Forms.Panel PanelTop;
+        private System.Windows.Forms.Panel panelCenter;
+        private System.Windows.Forms.Label LBProgramName;
         private View.UCInsertWorkOrder ucInsertWorkOrder1;
         private View.UCSelectWorkOrder ucSelectWorkOrder1;
         private View.UCSelectWorkComplete ucSelectWorkComplete1;
         private View.UCMainHome ucMainHome1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LBOrderName;
+        private System.Windows.Forms.Label LBDate;
+        private System.Windows.Forms.Label LBName;
+        private System.Windows.Forms.Label LBNowDate;
         private System.Windows.Forms.Button btnShutDown;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
