@@ -16,5 +16,19 @@ namespace MESProject.View
         {
             InitializeComponent();
         }
+
+        private void UCSelectWorkOrder_Load(object sender, EventArgs e)
+        {
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "yyyy-MM-dd-dddd";
+            dateTimePicker2.Format = DateTimePickerFormat.Custom;
+            dateTimePicker2.CustomFormat = "yyyy-MM-dd-dddd";
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime dt = 
+        }
     }
 }
