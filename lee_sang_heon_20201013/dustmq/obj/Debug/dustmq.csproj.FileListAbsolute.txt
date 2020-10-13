@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\dustmq\bin\Debug\dustmq.exe.config
+C:\Users\User\source\repos\dustmq\bin\Debug\dustmq.exe
+C:\Users\User\source\repos\dustmq\bin\Debug\dustmq.pdb
+C:\Users\User\source\repos\dustmq\bin\Debug\CxFlatUI.dll
+C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.csprojAssemblyReference.cache
+C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.Form1.resources
+C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.Properties.Resources.resources
+C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.csproj.GenerateResource.cache
+C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.csproj.CopyComplete
+C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.exe
+C:\Users\User\source\repos\dustmq\obj\Debug\dustmq.pdb
