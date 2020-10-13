@@ -28,21 +28,43 @@ namespace MESProject
         private void btnHome_Click(object sender, EventArgs e)
         {
             ucMainHome1.BringToFront();
+
+            // 버튼 클릭시 색상 변화
+            this.btnHome.BackColor = Design.DesignBinding.DarkGray;
+            this.btnWOinsert.BackColor = Design.DesignBinding.LiteGray; ;
+            this.btnWOSelect.BackColor = Design.DesignBinding.LiteGray; ;
+            this.btnWCSelect.BackColor = Design.DesignBinding.LiteGray; ;
+
         }
 
         private void btnWOinsert_Click(object sender, EventArgs e)
         {
             ucInsertWorkOrder1.BringToFront();
+
+            this.btnHome.BackColor = Design.DesignBinding.LiteGray;
+            this.btnWOinsert.BackColor = Design.DesignBinding.DarkGray; ;
+            this.btnWOSelect.BackColor = Design.DesignBinding.LiteGray; ;
+            this.btnWCSelect.BackColor = Design.DesignBinding.LiteGray; ;
         }
 
         private void btnWOSelect_Click(object sender, EventArgs e)
         {
             ucSelectWorkOrder1.BringToFront();
+
+            this.btnHome.BackColor = Design.DesignBinding.LiteGray;
+            this.btnWOinsert.BackColor = Design.DesignBinding.LiteGray; ;
+            this.btnWOSelect.BackColor = Design.DesignBinding.DarkGray; ;
+            this.btnWCSelect.BackColor = Design.DesignBinding.LiteGray; ;
         }
 
         private void btnWCSelect_Click(object sender, EventArgs e)
         {
             ucSelectWorkComplete1.BringToFront();
+
+            this.btnHome.BackColor = Design.DesignBinding.LiteGray;
+            this.btnWOinsert.BackColor = Design.DesignBinding.LiteGray; ;
+            this.btnWOSelect.BackColor = Design.DesignBinding.LiteGray; ;
+            this.btnWCSelect.BackColor = Design.DesignBinding.DarkGray; ;
         }
 
         private void btnShutDown_Click(object sender, EventArgs e)

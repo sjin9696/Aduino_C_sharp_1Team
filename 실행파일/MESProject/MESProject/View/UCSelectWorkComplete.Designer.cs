@@ -28,33 +28,141 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.cbSearch = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.dgvWCSelect = new System.Windows.Forms.DataGridView();
+            this.dtpFirstDate = new System.Windows.Forms.DateTimePicker();
+            this.lbBlank = new System.Windows.Forms.Label();
+            this.dtpSecondDate = new System.Windows.Forms.DateTimePicker();
+            this.btnDateSearch = new System.Windows.Forms.Button();
+            this.uiImageButton1 = new Sunny.UI.UIImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWCSelect)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // cbSearch
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "작업결과조회";
+            this.cbSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSearch.FormattingEnabled = true;
+            this.cbSearch.Items.AddRange(new object[] {
+            "종합",
+            "납품처",
+            "제품명"});
+            this.cbSearch.Location = new System.Drawing.Point(687, 71);
+            this.cbSearch.Name = "cbSearch";
+            this.cbSearch.Size = new System.Drawing.Size(82, 25);
+            this.cbSearch.TabIndex = 12;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(922, 71);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(69, 25);
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.Text = "찾기";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.Location = new System.Drawing.Point(775, 71);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(141, 25);
+            this.tbSearch.TabIndex = 10;
+            // 
+            // dgvWCSelect
+            // 
+            this.dgvWCSelect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWCSelect.Location = new System.Drawing.Point(3, 101);
+            this.dgvWCSelect.Name = "dgvWCSelect";
+            this.dgvWCSelect.RowTemplate.Height = 23;
+            this.dgvWCSelect.Size = new System.Drawing.Size(1018, 547);
+            this.dgvWCSelect.TabIndex = 9;
+            // 
+            // dtpFirstDate
+            // 
+            this.dtpFirstDate.CalendarFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFirstDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFirstDate.Location = new System.Drawing.Point(3, 71);
+            this.dtpFirstDate.Name = "dtpFirstDate";
+            this.dtpFirstDate.Size = new System.Drawing.Size(226, 25);
+            this.dtpFirstDate.TabIndex = 14;
+            // 
+            // lbBlank
+            // 
+            this.lbBlank.AutoSize = true;
+            this.lbBlank.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBlank.Location = new System.Drawing.Point(235, 77);
+            this.lbBlank.Name = "lbBlank";
+            this.lbBlank.Size = new System.Drawing.Size(13, 17);
+            this.lbBlank.TabIndex = 15;
+            this.lbBlank.Text = "-";
+            // 
+            // dtpSecondDate
+            // 
+            this.dtpSecondDate.CalendarFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpSecondDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpSecondDate.Location = new System.Drawing.Point(254, 71);
+            this.dtpSecondDate.Name = "dtpSecondDate";
+            this.dtpSecondDate.Size = new System.Drawing.Size(226, 25);
+            this.dtpSecondDate.TabIndex = 16;
+            // 
+            // btnDateSearch
+            // 
+            this.btnDateSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDateSearch.Location = new System.Drawing.Point(486, 71);
+            this.btnDateSearch.Name = "btnDateSearch";
+            this.btnDateSearch.Size = new System.Drawing.Size(69, 25);
+            this.btnDateSearch.TabIndex = 17;
+            this.btnDateSearch.Text = "찾기";
+            this.btnDateSearch.UseVisualStyleBackColor = true;
+            // 
+            // uiImageButton1
+            // 
+            this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiImageButton1.Image = global::MESProject.Properties.Resources.icons8_refresh_32px;
+            this.uiImageButton1.Location = new System.Drawing.Point(996, 71);
+            this.uiImageButton1.Name = "uiImageButton1";
+            this.uiImageButton1.Size = new System.Drawing.Size(25, 25);
+            this.uiImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.uiImageButton1.TabIndex = 18;
+            this.uiImageButton1.TabStop = false;
+            this.uiImageButton1.Text = null;
             // 
             // UCSelectWorkComplete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.uiImageButton1);
+            this.Controls.Add(this.btnDateSearch);
+            this.Controls.Add(this.dtpSecondDate);
+            this.Controls.Add(this.lbBlank);
+            this.Controls.Add(this.dtpFirstDate);
+            this.Controls.Add(this.cbSearch);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.tbSearch);
+            this.Controls.Add(this.dgvWCSelect);
             this.Name = "UCSelectWorkComplete";
-            this.Size = new System.Drawing.Size(834, 561);
+            this.Size = new System.Drawing.Size(1024, 651);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWCSelect)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbSearch;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.DataGridView dgvWCSelect;
+        private System.Windows.Forms.DateTimePicker dtpFirstDate;
+        private System.Windows.Forms.Label lbBlank;
+        private System.Windows.Forms.DateTimePicker dtpSecondDate;
+        private System.Windows.Forms.Button btnDateSearch;
+        private Sunny.UI.UIImageButton uiImageButton1;
     }
 }

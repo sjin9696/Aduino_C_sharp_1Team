@@ -45,9 +45,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label1);
             this.Name = "UCMainHome";
-            this.Size = new System.Drawing.Size(834, 561);
+            this.Size = new System.Drawing.Size(1024, 651);
             this.ResumeLayout(false);
             this.PerformLayout();
 
