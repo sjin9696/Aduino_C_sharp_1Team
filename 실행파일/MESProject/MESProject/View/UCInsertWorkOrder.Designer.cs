@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnUpload = new System.Windows.Forms.Button();
             this.tlbWorkOrder = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -55,17 +55,17 @@
             this.pnOrderList.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnInsert
+            // btnUpload
             // 
-            this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnInsert.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.Location = new System.Drawing.Point(720, 297);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(80, 35);
-            this.btnInsert.TabIndex = 20;
-            this.btnInsert.Text = "확인";
-            this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnUpload.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload.Location = new System.Drawing.Point(720, 297);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(80, 35);
+            this.btnUpload.TabIndex = 20;
+            this.btnUpload.Text = "업로드";
+            this.btnUpload.UseVisualStyleBackColor = false;
             // 
             // tlbWorkOrder
             // 
@@ -248,7 +248,7 @@
             this.pnOrderInsert.BackColor = System.Drawing.Color.White;
             this.pnOrderInsert.Controls.Add(this.btnClear);
             this.pnOrderInsert.Controls.Add(this.tlbWorkOrder);
-            this.pnOrderInsert.Controls.Add(this.btnInsert);
+            this.pnOrderInsert.Controls.Add(this.btnUpload);
             this.pnOrderInsert.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnOrderInsert.Location = new System.Drawing.Point(0, 0);
             this.pnOrderInsert.Name = "pnOrderInsert";
@@ -305,7 +305,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnUpload;
         private System.Windows.Forms.TableLayoutPanel tlbWorkOrder;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

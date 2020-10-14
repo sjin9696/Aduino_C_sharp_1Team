@@ -27,7 +27,7 @@ namespace MESProject
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            ucMainHome1.BringToFront();
+            ucMainHome2.BringToFront();
 
             // 버튼 클릭시 색상 변화
             this.btnHome.BackColor = Design.DesignBinding.DarkGray;

@@ -42,11 +42,12 @@
             this.pnTop = new System.Windows.Forms.Panel();
             this.lbProgramName = new System.Windows.Forms.Label();
             this.pnCenter = new System.Windows.Forms.Panel();
-            this.ucMainHome1 = new MESProject.View.UCMainHome();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ucSelectWorkOrder1 = new MESProject.View.UCSelectWorkOrder();
             this.ucSelectWorkComplete1 = new MESProject.View.UCSelectWorkComplete();
             this.ucInsertWorkOrder1 = new MESProject.View.UCInsertWorkOrder();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ucMainHome1 = new MESProject.View.UCMainHome();
+            this.ucMainHome2 = new MESProject.View.UCMainHome();
             this.pnLeft.SuspendLayout();
             this.pnTop.SuspendLayout();
             this.pnCenter.SuspendLayout();
@@ -254,7 +255,7 @@
             // pnCenter
             // 
             this.pnCenter.BackColor = System.Drawing.Color.White;
-            this.pnCenter.Controls.Add(this.ucMainHome1);
+            this.pnCenter.Controls.Add(this.ucMainHome2);
             this.pnCenter.Controls.Add(this.ucSelectWorkOrder1);
             this.pnCenter.Controls.Add(this.ucSelectWorkComplete1);
             this.pnCenter.Controls.Add(this.ucInsertWorkOrder1);
@@ -263,14 +264,11 @@
             this.pnCenter.Size = new System.Drawing.Size(1160, 681);
             this.pnCenter.TabIndex = 2;
             // 
-            // ucMainHome1
+            // timer1
             // 
-            this.ucMainHome1.BackColor = System.Drawing.Color.White;
-            this.ucMainHome1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucMainHome1.Location = new System.Drawing.Point(0, 0);
-            this.ucMainHome1.Name = "ucMainHome1";
-            this.ucMainHome1.Size = new System.Drawing.Size(1160, 681);
-            this.ucMainHome1.TabIndex = 3;
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // ucSelectWorkOrder1
             // 
@@ -298,11 +296,23 @@
             this.ucInsertWorkOrder1.Size = new System.Drawing.Size(1160, 681);
             this.ucInsertWorkOrder1.TabIndex = 0;
             // 
-            // timer1
+            // ucMainHome1
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.ucMainHome1.BackColor = System.Drawing.Color.White;
+            this.ucMainHome1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucMainHome1.Location = new System.Drawing.Point(0, 0);
+            this.ucMainHome1.Name = "ucMainHome1";
+            this.ucMainHome1.Size = new System.Drawing.Size(1160, 681);
+            this.ucMainHome1.TabIndex = 3;
+            // 
+            // ucMainHome2
+            // 
+            this.ucMainHome2.BackColor = System.Drawing.Color.White;
+            this.ucMainHome2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucMainHome2.Location = new System.Drawing.Point(0, 0);
+            this.ucMainHome2.Name = "ucMainHome2";
+            this.ucMainHome2.Size = new System.Drawing.Size(1160, 681);
+            this.ucMainHome2.TabIndex = 3;
             // 
             // Form1
             // 
@@ -345,6 +355,7 @@
         private System.Windows.Forms.Button btnShutDown;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbProgramName;
+        private View.UCMainHome ucMainHome2;
     }
 }
 

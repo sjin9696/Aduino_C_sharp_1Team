@@ -61,7 +61,7 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(69, 25);
             this.btnSearch.TabIndex = 11;
-            this.btnSearch.Text = "찾기";
+            this.btnSearch.Text = "조회";
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // tbSearch
@@ -116,7 +116,7 @@
             this.btnDateSearch.Name = "btnDateSearch";
             this.btnDateSearch.Size = new System.Drawing.Size(69, 25);
             this.btnDateSearch.TabIndex = 17;
-            this.btnDateSearch.Text = "찾기";
+            this.btnDateSearch.Text = "조회";
             this.btnDateSearch.UseVisualStyleBackColor = true;
             // 
             // uiImageButton1
