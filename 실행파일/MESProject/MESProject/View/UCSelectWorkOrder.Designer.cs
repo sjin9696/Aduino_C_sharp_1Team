@@ -47,14 +47,14 @@
             this.dgvWOSelect.Location = new System.Drawing.Point(3, 101);
             this.dgvWOSelect.Name = "dgvWOSelect";
             this.dgvWOSelect.RowTemplate.Height = 23;
-            this.dgvWOSelect.Size = new System.Drawing.Size(1018, 547);
+            this.dgvWOSelect.Size = new System.Drawing.Size(1154, 547);
             this.dgvWOSelect.TabIndex = 2;
             // 
             // uiImageButton1
             // 
             this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiImageButton1.Image = global::MESProject.Properties.Resources.icons8_refresh_32px;
-            this.uiImageButton1.Location = new System.Drawing.Point(996, 71);
+            this.uiImageButton1.Location = new System.Drawing.Point(1132, 71);
             this.uiImageButton1.Name = "uiImageButton1";
             this.uiImageButton1.Size = new System.Drawing.Size(25, 25);
             this.uiImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,7 +108,7 @@
             "종합",
             "납품처",
             "제품명"});
-            this.cbSearch.Location = new System.Drawing.Point(687, 71);
+            this.cbSearch.Location = new System.Drawing.Point(823, 71);
             this.cbSearch.Name = "cbSearch";
             this.cbSearch.Size = new System.Drawing.Size(82, 25);
             this.cbSearch.TabIndex = 21;
@@ -116,7 +116,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(922, 71);
+            this.btnSearch.Location = new System.Drawing.Point(1058, 71);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(69, 25);
             this.btnSearch.TabIndex = 20;
@@ -126,7 +126,7 @@
             // tbSearch
             // 
             this.tbSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSearch.Location = new System.Drawing.Point(775, 71);
+            this.tbSearch.Location = new System.Drawing.Point(911, 71);
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(141, 25);
             this.tbSearch.TabIndex = 19;
@@ -146,7 +146,7 @@
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.dgvWOSelect);
             this.Name = "UCSelectWorkOrder";
-            this.Size = new System.Drawing.Size(1024, 651);
+            this.Size = new System.Drawing.Size(1160, 681);
             ((System.ComponentModel.ISupportInitialize)(this.dgvWOSelect)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).EndInit();
             this.ResumeLayout(false);

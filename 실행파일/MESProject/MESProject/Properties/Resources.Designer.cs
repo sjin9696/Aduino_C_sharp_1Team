@@ -63,6 +63,16 @@ namespace MESProject.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _3_SSRARwl {
+            get {
+                object obj = ResourceManager.GetObject("3_SSRARwl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_design_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_design_32px", resourceCulture);
@@ -116,6 +126,46 @@ namespace MESProject.Properties {
         internal static System.Drawing.Bitmap icons8_shutdown_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_shutdown_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap LED {
+            get {
+                object obj = ResourceManager.GetObject("LED", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap led_300x199 {
+            get {
+                object obj = ResourceManager.GetObject("led-300x199", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 제목_없음 {
+            get {
+                object obj = ResourceManager.GetObject("제목 없음", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 제목_없음1 {
+            get {
+                object obj = ResourceManager.GetObject("제목 없음1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

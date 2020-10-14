@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MESProject.cmdTable;
 
 namespace MESProject.View
 {
     public partial class UCSelectWorkComplete : UserControl
     {
+
         public UCSelectWorkComplete()
         {
             InitializeComponent();

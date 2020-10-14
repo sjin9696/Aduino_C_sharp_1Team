@@ -11,7 +11,7 @@ namespace MESProject.DBConnect
     class DataSources
     {
         private static string strconn =
-            "Data Source=192.168.0.19;Initial Catalog=SANGSAN;User ID=sa;Password=1234";
+            "Data Source=192.168.0.19;Initial Catalog=Product Manager;User ID=sa;Password=1234";
         private static SqlConnection conn = null;
 
         public static SqlConnection getConnection()
@@ -35,5 +35,7 @@ namespace MESProject.DBConnect
             }
 
         }
+
+
     }
 }

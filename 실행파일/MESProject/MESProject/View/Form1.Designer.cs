@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnLeft = new System.Windows.Forms.Panel();
+            this.lbDBIP = new System.Windows.Forms.Label();
             this.btnShutDown = new System.Windows.Forms.Button();
             this.btnWCSelect = new System.Windows.Forms.Button();
             this.btnWOSelect = new System.Windows.Forms.Button();
+            this.lbNowDate = new System.Windows.Forms.Label();
+            this.lbDate = new System.Windows.Forms.Label();
             this.btnWOinsert = new System.Windows.Forms.Button();
+            this.lbIPNum = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
             this.pnTop = new System.Windows.Forms.Panel();
             this.lbProgramName = new System.Windows.Forms.Label();
-            this.lbDBIP = new System.Windows.Forms.Label();
-            this.lbDate = new System.Windows.Forms.Label();
-            this.lbIPNum = new System.Windows.Forms.Label();
-            this.lbNowDate = new System.Windows.Forms.Label();
             this.pnCenter = new System.Windows.Forms.Panel();
             this.ucMainHome1 = new MESProject.View.UCMainHome();
             this.ucSelectWorkOrder1 = new MESProject.View.UCSelectWorkOrder();
@@ -55,33 +55,49 @@
             // pnLeft
             // 
             this.pnLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
+            this.pnLeft.Controls.Add(this.lbDBIP);
             this.pnLeft.Controls.Add(this.btnShutDown);
             this.pnLeft.Controls.Add(this.btnWCSelect);
             this.pnLeft.Controls.Add(this.btnWOSelect);
+            this.pnLeft.Controls.Add(this.lbNowDate);
+            this.pnLeft.Controls.Add(this.lbDate);
             this.pnLeft.Controls.Add(this.btnWOinsert);
+            this.pnLeft.Controls.Add(this.lbIPNum);
             this.pnLeft.Controls.Add(this.btnHome);
-            this.pnLeft.Location = new System.Drawing.Point(10, 10);
+            this.pnLeft.Controls.Add(this.pnTop);
+            this.pnLeft.Location = new System.Drawing.Point(12, 12);
             this.pnLeft.Name = "pnLeft";
-            this.pnLeft.Size = new System.Drawing.Size(130, 731);
+            this.pnLeft.Size = new System.Drawing.Size(1160, 50);
             this.pnLeft.TabIndex = 0;
+            // 
+            // lbDBIP
+            // 
+            this.lbDBIP.AutoSize = true;
+            this.lbDBIP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDBIP.ForeColor = System.Drawing.Color.Black;
+            this.lbDBIP.Location = new System.Drawing.Point(958, 24);
+            this.lbDBIP.Name = "lbDBIP";
+            this.lbDBIP.Size = new System.Drawing.Size(45, 17);
+            this.lbDBIP.TabIndex = 4;
+            this.lbDBIP.Text = "DB IP :";
             // 
             // btnShutDown
             // 
             this.btnShutDown.BackColor = System.Drawing.Color.Brown;
-            this.btnShutDown.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnShutDown.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnShutDown.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnShutDown.FlatAppearance.BorderSize = 0;
             this.btnShutDown.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
             this.btnShutDown.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             this.btnShutDown.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnShutDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShutDown.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShutDown.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnShutDown.ForeColor = System.Drawing.Color.White;
             this.btnShutDown.Image = global::MESProject.Properties.Resources.icons8_shutdown_32px;
             this.btnShutDown.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShutDown.Location = new System.Drawing.Point(0, 671);
+            this.btnShutDown.Location = new System.Drawing.Point(798, 0);
             this.btnShutDown.Name = "btnShutDown";
-            this.btnShutDown.Size = new System.Drawing.Size(130, 60);
+            this.btnShutDown.Size = new System.Drawing.Size(130, 50);
             this.btnShutDown.TabIndex = 6;
             this.btnShutDown.Text = "종료";
             this.btnShutDown.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -91,20 +107,20 @@
             // btnWCSelect
             // 
             this.btnWCSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
-            this.btnWCSelect.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWCSelect.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnWCSelect.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnWCSelect.FlatAppearance.BorderSize = 0;
             this.btnWCSelect.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
             this.btnWCSelect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnWCSelect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
             this.btnWCSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWCSelect.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWCSelect.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnWCSelect.ForeColor = System.Drawing.Color.White;
             this.btnWCSelect.Image = global::MESProject.Properties.Resources.icons8_purchase_order_32px;
             this.btnWCSelect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWCSelect.Location = new System.Drawing.Point(0, 240);
+            this.btnWCSelect.Location = new System.Drawing.Point(668, 0);
             this.btnWCSelect.Name = "btnWCSelect";
-            this.btnWCSelect.Size = new System.Drawing.Size(130, 80);
+            this.btnWCSelect.Size = new System.Drawing.Size(130, 50);
             this.btnWCSelect.TabIndex = 5;
             this.btnWCSelect.Text = "결과조회";
             this.btnWCSelect.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -115,20 +131,20 @@
             // btnWOSelect
             // 
             this.btnWOSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
-            this.btnWOSelect.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWOSelect.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnWOSelect.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnWOSelect.FlatAppearance.BorderSize = 0;
             this.btnWOSelect.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
             this.btnWOSelect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnWOSelect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
             this.btnWOSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWOSelect.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWOSelect.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnWOSelect.ForeColor = System.Drawing.Color.White;
             this.btnWOSelect.Image = global::MESProject.Properties.Resources.icons8_factory_32px;
             this.btnWOSelect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWOSelect.Location = new System.Drawing.Point(0, 160);
+            this.btnWOSelect.Location = new System.Drawing.Point(538, 0);
             this.btnWOSelect.Name = "btnWOSelect";
-            this.btnWOSelect.Size = new System.Drawing.Size(130, 80);
+            this.btnWOSelect.Size = new System.Drawing.Size(130, 50);
             this.btnWOSelect.TabIndex = 4;
             this.btnWOSelect.Text = "지시서조회";
             this.btnWOSelect.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -136,23 +152,45 @@
             this.btnWOSelect.UseVisualStyleBackColor = false;
             this.btnWOSelect.Click += new System.EventHandler(this.btnWOSelect_Click);
             // 
+            // lbNowDate
+            // 
+            this.lbNowDate.AutoSize = true;
+            this.lbNowDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNowDate.ForeColor = System.Drawing.Color.Black;
+            this.lbNowDate.Location = new System.Drawing.Point(1031, 6);
+            this.lbNowDate.Name = "lbNowDate";
+            this.lbNowDate.Size = new System.Drawing.Size(126, 17);
+            this.lbNowDate.TabIndex = 1;
+            this.lbNowDate.Text = "2020-10-12 12:12:12";
+            // 
+            // lbDate
+            // 
+            this.lbDate.AutoSize = true;
+            this.lbDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.ForeColor = System.Drawing.Color.Black;
+            this.lbDate.Location = new System.Drawing.Point(958, 6);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(67, 17);
+            this.lbDate.TabIndex = 3;
+            this.lbDate.Text = "현재시간 :";
+            // 
             // btnWOinsert
             // 
             this.btnWOinsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
-            this.btnWOinsert.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWOinsert.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnWOinsert.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnWOinsert.FlatAppearance.BorderSize = 0;
             this.btnWOinsert.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
             this.btnWOinsert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnWOinsert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
             this.btnWOinsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWOinsert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWOinsert.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnWOinsert.ForeColor = System.Drawing.Color.White;
             this.btnWOinsert.Image = global::MESProject.Properties.Resources.icons8_design_32px;
             this.btnWOinsert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWOinsert.Location = new System.Drawing.Point(0, 80);
+            this.btnWOinsert.Location = new System.Drawing.Point(408, 0);
             this.btnWOinsert.Name = "btnWOinsert";
-            this.btnWOinsert.Size = new System.Drawing.Size(130, 80);
+            this.btnWOinsert.Size = new System.Drawing.Size(130, 50);
             this.btnWOinsert.TabIndex = 3;
             this.btnWOinsert.Text = "지시서입력";
             this.btnWOinsert.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -160,20 +198,31 @@
             this.btnWOinsert.UseVisualStyleBackColor = false;
             this.btnWOinsert.Click += new System.EventHandler(this.btnWOinsert_Click);
             // 
+            // lbIPNum
+            // 
+            this.lbIPNum.AutoSize = true;
+            this.lbIPNum.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIPNum.ForeColor = System.Drawing.Color.Black;
+            this.lbIPNum.Location = new System.Drawing.Point(1077, 24);
+            this.lbIPNum.Name = "lbIPNum";
+            this.lbIPNum.Size = new System.Drawing.Size(80, 17);
+            this.lbIPNum.TabIndex = 2;
+            this.lbIPNum.Text = "192.168.0.19";
+            // 
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnHome.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = global::MESProject.Properties.Resources.icons8_home_32px_1;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 0);
+            this.btnHome.Location = new System.Drawing.Point(278, 0);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(130, 80);
+            this.btnHome.Size = new System.Drawing.Size(130, 50);
             this.btnHome.TabIndex = 2;
             this.btnHome.Text = "홈";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -185,9 +234,10 @@
             // 
             this.pnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(114)))), ((int)(((byte)(210)))));
             this.pnTop.Controls.Add(this.lbProgramName);
-            this.pnTop.Location = new System.Drawing.Point(150, 10);
+            this.pnTop.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnTop.Location = new System.Drawing.Point(0, 0);
             this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(700, 74);
+            this.pnTop.Size = new System.Drawing.Size(278, 50);
             this.pnTop.TabIndex = 1;
             // 
             // lbProgramName
@@ -195,55 +245,11 @@
             this.lbProgramName.AutoSize = true;
             this.lbProgramName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbProgramName.ForeColor = System.Drawing.Color.White;
-            this.lbProgramName.Location = new System.Drawing.Point(245, 19);
+            this.lbProgramName.Location = new System.Drawing.Point(6, 6);
             this.lbProgramName.Name = "lbProgramName";
             this.lbProgramName.Size = new System.Drawing.Size(269, 32);
-            this.lbProgramName.TabIndex = 0;
+            this.lbProgramName.TabIndex = 1;
             this.lbProgramName.Text = "작업지시 프로그램 傑作";
-            // 
-            // lbDBIP
-            // 
-            this.lbDBIP.AutoSize = true;
-            this.lbDBIP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDBIP.ForeColor = System.Drawing.Color.Black;
-            this.lbDBIP.Location = new System.Drawing.Point(932, 40);
-            this.lbDBIP.Name = "lbDBIP";
-            this.lbDBIP.Size = new System.Drawing.Size(54, 21);
-            this.lbDBIP.TabIndex = 4;
-            this.lbDBIP.Text = "DB IP :";
-            // 
-            // lbDate
-            // 
-            this.lbDate.AutoSize = true;
-            this.lbDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDate.ForeColor = System.Drawing.Color.Black;
-            this.lbDate.Location = new System.Drawing.Point(932, 19);
-            this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(81, 21);
-            this.lbDate.TabIndex = 3;
-            this.lbDate.Text = "현재시간 :";
-            // 
-            // lbIPNum
-            // 
-            this.lbIPNum.AutoSize = true;
-            this.lbIPNum.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIPNum.ForeColor = System.Drawing.Color.Black;
-            this.lbIPNum.Location = new System.Drawing.Point(1019, 40);
-            this.lbIPNum.Name = "lbIPNum";
-            this.lbIPNum.Size = new System.Drawing.Size(100, 21);
-            this.lbIPNum.TabIndex = 2;
-            this.lbIPNum.Text = "192.168.0.19";
-            // 
-            // lbNowDate
-            // 
-            this.lbNowDate.AutoSize = true;
-            this.lbNowDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNowDate.ForeColor = System.Drawing.Color.Black;
-            this.lbNowDate.Location = new System.Drawing.Point(1019, 19);
-            this.lbNowDate.Name = "lbNowDate";
-            this.lbNowDate.Size = new System.Drawing.Size(158, 21);
-            this.lbNowDate.TabIndex = 1;
-            this.lbNowDate.Text = "2020-10-12 12:12:12";
             // 
             // pnCenter
             // 
@@ -252,19 +258,18 @@
             this.pnCenter.Controls.Add(this.ucSelectWorkOrder1);
             this.pnCenter.Controls.Add(this.ucSelectWorkComplete1);
             this.pnCenter.Controls.Add(this.ucInsertWorkOrder1);
-            this.pnCenter.Location = new System.Drawing.Point(150, 90);
+            this.pnCenter.Location = new System.Drawing.Point(12, 68);
             this.pnCenter.Name = "pnCenter";
-            this.pnCenter.Size = new System.Drawing.Size(1024, 651);
+            this.pnCenter.Size = new System.Drawing.Size(1160, 681);
             this.pnCenter.TabIndex = 2;
             // 
             // ucMainHome1
             // 
             this.ucMainHome1.BackColor = System.Drawing.Color.White;
-            this.ucMainHome1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ucMainHome1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucMainHome1.Location = new System.Drawing.Point(0, 0);
             this.ucMainHome1.Name = "ucMainHome1";
-            this.ucMainHome1.Size = new System.Drawing.Size(1024, 651);
+            this.ucMainHome1.Size = new System.Drawing.Size(1160, 681);
             this.ucMainHome1.TabIndex = 3;
             // 
             // ucSelectWorkOrder1
@@ -273,7 +278,7 @@
             this.ucSelectWorkOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucSelectWorkOrder1.Location = new System.Drawing.Point(0, 0);
             this.ucSelectWorkOrder1.Name = "ucSelectWorkOrder1";
-            this.ucSelectWorkOrder1.Size = new System.Drawing.Size(1024, 651);
+            this.ucSelectWorkOrder1.Size = new System.Drawing.Size(1160, 681);
             this.ucSelectWorkOrder1.TabIndex = 2;
             // 
             // ucSelectWorkComplete1
@@ -282,7 +287,7 @@
             this.ucSelectWorkComplete1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucSelectWorkComplete1.Location = new System.Drawing.Point(0, 0);
             this.ucSelectWorkComplete1.Name = "ucSelectWorkComplete1";
-            this.ucSelectWorkComplete1.Size = new System.Drawing.Size(1024, 651);
+            this.ucSelectWorkComplete1.Size = new System.Drawing.Size(1160, 681);
             this.ucSelectWorkComplete1.TabIndex = 1;
             // 
             // ucInsertWorkOrder1
@@ -290,7 +295,7 @@
             this.ucInsertWorkOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucInsertWorkOrder1.Location = new System.Drawing.Point(0, 0);
             this.ucInsertWorkOrder1.Name = "ucInsertWorkOrder1";
-            this.ucInsertWorkOrder1.Size = new System.Drawing.Size(1024, 651);
+            this.ucInsertWorkOrder1.Size = new System.Drawing.Size(1160, 681);
             this.ucInsertWorkOrder1.TabIndex = 0;
             // 
             // timer1
@@ -305,36 +310,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 761);
-            this.Controls.Add(this.lbDBIP);
             this.Controls.Add(this.pnCenter);
-            this.Controls.Add(this.pnTop);
-            this.Controls.Add(this.lbDate);
-            this.Controls.Add(this.lbNowDate);
             this.Controls.Add(this.pnLeft);
-            this.Controls.Add(this.lbIPNum);
             this.HelpButton = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.pnLeft.ResumeLayout(false);
+            this.pnLeft.PerformLayout();
             this.pnTop.ResumeLayout(false);
             this.pnTop.PerformLayout();
             this.pnCenter.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Panel pnTop;
         private System.Windows.Forms.Panel pnLeft;
         private System.Windows.Forms.Button btnWCSelect;
         private System.Windows.Forms.Button btnWOSelect;
         private System.Windows.Forms.Button btnWOinsert;
         private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Panel pnTop;
         private System.Windows.Forms.Panel pnCenter;
-        private System.Windows.Forms.Label lbProgramName;
         private View.UCInsertWorkOrder ucInsertWorkOrder1;
         private View.UCSelectWorkOrder ucSelectWorkOrder1;
         private View.UCSelectWorkComplete ucSelectWorkComplete1;
@@ -345,6 +344,7 @@
         private System.Windows.Forms.Label lbNowDate;
         private System.Windows.Forms.Button btnShutDown;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbProgramName;
     }
 }
 
