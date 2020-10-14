@@ -17,6 +17,8 @@ namespace MESProject.View
         public UCInsertWorkOrder()
         {
             InitializeComponent();
+
+            dateTimePicker2.Value = DateTime.Now.AddDays(7);
         }
         
         private void btnPush_Click(object sender, EventArgs e) //김완수
@@ -69,7 +71,7 @@ namespace MESProject.View
             string startOrder = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             string endOrder = dateTimePicker2.Value.ToString("yyyy-MM-dd");
             
-            dataGridView1.Rows.Add
+            dgvWorkOrder.Rows.Add
                 (startOrder, employeeName, endOrder, productName, productQuantity.ToString(), companyName, remark);
         }
     }

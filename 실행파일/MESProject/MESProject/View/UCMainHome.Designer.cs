@@ -28,27 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartData = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbProductStandard = new System.Windows.Forms.Label();
             this.pbProductData = new System.Windows.Forms.PictureBox();
             this.pbProduct = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbPerformanceData = new System.Windows.Forms.Label();
+            this.tlpChartData = new System.Windows.Forms.TableLayoutPanel();
+            this.lbProductPercent3 = new System.Windows.Forms.Label();
+            this.lbProductCount3 = new System.Windows.Forms.Label();
+            this.lbProduct3 = new System.Windows.Forms.Label();
+            this.lbProductPercent2 = new System.Windows.Forms.Label();
+            this.lbProductCount2 = new System.Windows.Forms.Label();
+            this.lbProduct2 = new System.Windows.Forms.Label();
+            this.lbProductPercent1 = new System.Windows.Forms.Label();
+            this.lbProductCount1 = new System.Windows.Forms.Label();
             this.lbProduct1 = new System.Windows.Forms.Label();
             this.lbProductPercent = new System.Windows.Forms.Label();
             this.lbProductCount = new System.Windows.Forms.Label();
             this.lbProduct = new System.Windows.Forms.Label();
-            this.tlpChartData = new System.Windows.Forms.TableLayoutPanel();
-            this.lbProductCount1 = new System.Windows.Forms.Label();
-            this.lbProductPercent1 = new System.Windows.Forms.Label();
-            this.lbProduct2 = new System.Windows.Forms.Label();
-            this.lbProductCount2 = new System.Windows.Forms.Label();
-            this.lbProductPercent2 = new System.Windows.Forms.Label();
-            this.lbProduct3 = new System.Windows.Forms.Label();
-            this.lbProductCount3 = new System.Windows.Forms.Label();
-            this.lbProductPercent3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartData)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProductData)).BeginInit();
@@ -59,16 +61,16 @@
             // 
             // chartData
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartData.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartData.Legends.Add(legend5);
-            this.chartData.Location = new System.Drawing.Point(60, 30);
+            chartArea2.Name = "ChartArea1";
+            this.chartData.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartData.Legends.Add(legend2);
+            this.chartData.Location = new System.Drawing.Point(109, 33);
             this.chartData.Name = "chartData";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartData.Series.Add(series5);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartData.Series.Add(series2);
             this.chartData.Size = new System.Drawing.Size(648, 307);
             this.chartData.TabIndex = 6;
             this.chartData.Text = "chart1";
@@ -76,12 +78,24 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lbProductStandard);
             this.panel1.Controls.Add(this.pbProductData);
             this.panel1.Controls.Add(this.pbProduct);
-            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1160, 303);
             this.panel1.TabIndex = 8;
+            // 
+            // lbProductStandard
+            // 
+            this.lbProductStandard.AutoSize = true;
+            this.lbProductStandard.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProductStandard.Location = new System.Drawing.Point(10, 10);
+            this.lbProductStandard.Name = "lbProductStandard";
+            this.lbProductStandard.Size = new System.Drawing.Size(64, 17);
+            this.lbProductStandard.TabIndex = 6;
+            this.lbProductStandard.Text = "제품 규격";
             // 
             // pbProductData
             // 
@@ -106,56 +120,24 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lbPerformanceData);
             this.panel2.Controls.Add(this.tlpChartData);
             this.panel2.Controls.Add(this.chartData);
-            this.panel2.Location = new System.Drawing.Point(0, 312);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 315);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1160, 366);
             this.panel2.TabIndex = 9;
             // 
-            // lbProduct1
+            // lbPerformanceData
             // 
-            this.lbProduct1.AutoSize = true;
-            this.lbProduct1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProduct1.Location = new System.Drawing.Point(4, 68);
-            this.lbProduct1.Name = "lbProduct1";
-            this.lbProduct1.Size = new System.Drawing.Size(68, 21);
-            this.lbProduct1.TabIndex = 7;
-            this.lbProduct1.Text = "□Light 1";
-            this.lbProduct1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbProductPercent
-            // 
-            this.lbProductPercent.AutoSize = true;
-            this.lbProductPercent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProductPercent.Location = new System.Drawing.Point(200, 1);
-            this.lbProductPercent.Name = "lbProductPercent";
-            this.lbProductPercent.Size = new System.Drawing.Size(68, 21);
-            this.lbProductPercent.TabIndex = 8;
-            this.lbProductPercent.Text = "□퍼센트";
-            this.lbProductPercent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbProductCount
-            // 
-            this.lbProductCount.AutoSize = true;
-            this.lbProductCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProductCount.Location = new System.Drawing.Point(102, 1);
-            this.lbProductCount.Name = "lbProductCount";
-            this.lbProductCount.Size = new System.Drawing.Size(52, 21);
-            this.lbProductCount.TabIndex = 9;
-            this.lbProductCount.Text = "□수량";
-            this.lbProductCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbProduct
-            // 
-            this.lbProduct.AutoSize = true;
-            this.lbProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProduct.Location = new System.Drawing.Point(4, 1);
-            this.lbProduct.Name = "lbProduct";
-            this.lbProduct.Size = new System.Drawing.Size(68, 21);
-            this.lbProduct.TabIndex = 10;
-            this.lbProduct.Text = "□제품명";
-            this.lbProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbPerformanceData.AutoSize = true;
+            this.lbPerformanceData.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPerformanceData.Location = new System.Drawing.Point(10, 10);
+            this.lbPerformanceData.Name = "lbPerformanceData";
+            this.lbPerformanceData.Size = new System.Drawing.Size(77, 17);
+            this.lbPerformanceData.TabIndex = 7;
+            this.lbPerformanceData.Text = "성과 데이터";
             // 
             // tlpChartData
             // 
@@ -176,103 +158,147 @@
             this.tlpChartData.Controls.Add(this.lbProductPercent, 2, 0);
             this.tlpChartData.Controls.Add(this.lbProductCount, 1, 0);
             this.tlpChartData.Controls.Add(this.lbProduct, 0, 0);
-            this.tlpChartData.Location = new System.Drawing.Point(770, 47);
+            this.tlpChartData.Location = new System.Drawing.Point(652, 169);
             this.tlpChartData.Name = "tlpChartData";
             this.tlpChartData.RowCount = 4;
             this.tlpChartData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpChartData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpChartData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpChartData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpChartData.Size = new System.Drawing.Size(300, 271);
+            this.tlpChartData.Size = new System.Drawing.Size(287, 139);
             this.tlpChartData.TabIndex = 11;
             // 
-            // lbProductCount1
+            // lbProductPercent3
             // 
-            this.lbProductCount1.AutoSize = true;
-            this.lbProductCount1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProductCount1.Location = new System.Drawing.Point(102, 68);
-            this.lbProductCount1.Name = "lbProductCount1";
-            this.lbProductCount1.Size = new System.Drawing.Size(28, 21);
-            this.lbProductCount1.TabIndex = 11;
-            this.lbProductCount1.Text = "10";
-            this.lbProductCount1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbProductPercent1
-            // 
-            this.lbProductPercent1.AutoSize = true;
-            this.lbProductPercent1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProductPercent1.Location = new System.Drawing.Point(200, 68);
-            this.lbProductPercent1.Name = "lbProductPercent1";
-            this.lbProductPercent1.Size = new System.Drawing.Size(41, 21);
-            this.lbProductPercent1.TabIndex = 12;
-            this.lbProductPercent1.Text = "30%";
-            this.lbProductPercent1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbProduct2
-            // 
-            this.lbProduct2.AutoSize = true;
-            this.lbProduct2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProduct2.Location = new System.Drawing.Point(4, 135);
-            this.lbProduct2.Name = "lbProduct2";
-            this.lbProduct2.Size = new System.Drawing.Size(68, 21);
-            this.lbProduct2.TabIndex = 13;
-            this.lbProduct2.Text = "□Light 2";
-            this.lbProduct2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbProductCount2
-            // 
-            this.lbProductCount2.AutoSize = true;
-            this.lbProductCount2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProductCount2.Location = new System.Drawing.Point(102, 135);
-            this.lbProductCount2.Name = "lbProductCount2";
-            this.lbProductCount2.Size = new System.Drawing.Size(28, 21);
-            this.lbProductCount2.TabIndex = 14;
-            this.lbProductCount2.Text = "10";
-            this.lbProductCount2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbProductPercent2
-            // 
-            this.lbProductPercent2.AutoSize = true;
-            this.lbProductPercent2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProductPercent2.Location = new System.Drawing.Point(200, 135);
-            this.lbProductPercent2.Name = "lbProductPercent2";
-            this.lbProductPercent2.Size = new System.Drawing.Size(41, 21);
-            this.lbProductPercent2.TabIndex = 15;
-            this.lbProductPercent2.Text = "30%";
-            this.lbProductPercent2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbProduct3
-            // 
-            this.lbProduct3.AutoSize = true;
-            this.lbProduct3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProduct3.Location = new System.Drawing.Point(4, 202);
-            this.lbProduct3.Name = "lbProduct3";
-            this.lbProduct3.Size = new System.Drawing.Size(68, 21);
-            this.lbProduct3.TabIndex = 16;
-            this.lbProduct3.Text = "□Light 3";
-            this.lbProduct3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbProductPercent3.AutoSize = true;
+            this.lbProductPercent3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProductPercent3.Location = new System.Drawing.Point(192, 103);
+            this.lbProductPercent3.Name = "lbProductPercent3";
+            this.lbProductPercent3.Size = new System.Drawing.Size(41, 21);
+            this.lbProductPercent3.TabIndex = 18;
+            this.lbProductPercent3.Text = "40%";
+            this.lbProductPercent3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProductCount3
             // 
             this.lbProductCount3.AutoSize = true;
             this.lbProductCount3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProductCount3.Location = new System.Drawing.Point(102, 202);
+            this.lbProductCount3.Location = new System.Drawing.Point(98, 103);
             this.lbProductCount3.Name = "lbProductCount3";
             this.lbProductCount3.Size = new System.Drawing.Size(28, 21);
             this.lbProductCount3.TabIndex = 17;
             this.lbProductCount3.Text = "10";
             this.lbProductCount3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbProductPercent3
+            // lbProduct3
             // 
-            this.lbProductPercent3.AutoSize = true;
-            this.lbProductPercent3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProductPercent3.Location = new System.Drawing.Point(200, 202);
-            this.lbProductPercent3.Name = "lbProductPercent3";
-            this.lbProductPercent3.Size = new System.Drawing.Size(41, 21);
-            this.lbProductPercent3.TabIndex = 18;
-            this.lbProductPercent3.Text = "40%";
-            this.lbProductPercent3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbProduct3.AutoSize = true;
+            this.lbProduct3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProduct3.Location = new System.Drawing.Point(4, 103);
+            this.lbProduct3.Name = "lbProduct3";
+            this.lbProduct3.Size = new System.Drawing.Size(85, 21);
+            this.lbProduct3.TabIndex = 16;
+            this.lbProduct3.Text = "□light_003";
+            this.lbProduct3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbProductPercent2
+            // 
+            this.lbProductPercent2.AutoSize = true;
+            this.lbProductPercent2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProductPercent2.Location = new System.Drawing.Point(192, 69);
+            this.lbProductPercent2.Name = "lbProductPercent2";
+            this.lbProductPercent2.Size = new System.Drawing.Size(41, 21);
+            this.lbProductPercent2.TabIndex = 15;
+            this.lbProductPercent2.Text = "30%";
+            this.lbProductPercent2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbProductCount2
+            // 
+            this.lbProductCount2.AutoSize = true;
+            this.lbProductCount2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProductCount2.Location = new System.Drawing.Point(98, 69);
+            this.lbProductCount2.Name = "lbProductCount2";
+            this.lbProductCount2.Size = new System.Drawing.Size(28, 21);
+            this.lbProductCount2.TabIndex = 14;
+            this.lbProductCount2.Text = "10";
+            this.lbProductCount2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbProduct2
+            // 
+            this.lbProduct2.AutoSize = true;
+            this.lbProduct2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProduct2.Location = new System.Drawing.Point(4, 69);
+            this.lbProduct2.Name = "lbProduct2";
+            this.lbProduct2.Size = new System.Drawing.Size(85, 21);
+            this.lbProduct2.TabIndex = 13;
+            this.lbProduct2.Text = "□light_002";
+            this.lbProduct2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbProductPercent1
+            // 
+            this.lbProductPercent1.AutoSize = true;
+            this.lbProductPercent1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProductPercent1.Location = new System.Drawing.Point(192, 35);
+            this.lbProductPercent1.Name = "lbProductPercent1";
+            this.lbProductPercent1.Size = new System.Drawing.Size(41, 21);
+            this.lbProductPercent1.TabIndex = 12;
+            this.lbProductPercent1.Text = "30%";
+            this.lbProductPercent1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbProductCount1
+            // 
+            this.lbProductCount1.AutoSize = true;
+            this.lbProductCount1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProductCount1.Location = new System.Drawing.Point(98, 35);
+            this.lbProductCount1.Name = "lbProductCount1";
+            this.lbProductCount1.Size = new System.Drawing.Size(28, 21);
+            this.lbProductCount1.TabIndex = 11;
+            this.lbProductCount1.Text = "10";
+            this.lbProductCount1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbProduct1
+            // 
+            this.lbProduct1.AutoSize = true;
+            this.lbProduct1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProduct1.Location = new System.Drawing.Point(4, 35);
+            this.lbProduct1.Name = "lbProduct1";
+            this.lbProduct1.Size = new System.Drawing.Size(85, 21);
+            this.lbProduct1.TabIndex = 7;
+            this.lbProduct1.Text = "□light_001";
+            this.lbProduct1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbProductPercent
+            // 
+            this.lbProductPercent.AutoSize = true;
+            this.lbProductPercent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProductPercent.Location = new System.Drawing.Point(192, 1);
+            this.lbProductPercent.Name = "lbProductPercent";
+            this.lbProductPercent.Size = new System.Drawing.Size(68, 21);
+            this.lbProductPercent.TabIndex = 8;
+            this.lbProductPercent.Text = "□퍼센트";
+            this.lbProductPercent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbProductCount
+            // 
+            this.lbProductCount.AutoSize = true;
+            this.lbProductCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProductCount.Location = new System.Drawing.Point(98, 1);
+            this.lbProductCount.Name = "lbProductCount";
+            this.lbProductCount.Size = new System.Drawing.Size(52, 21);
+            this.lbProductCount.TabIndex = 9;
+            this.lbProductCount.Text = "□수량";
+            this.lbProductCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbProduct
+            // 
+            this.lbProduct.AutoSize = true;
+            this.lbProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProduct.Location = new System.Drawing.Point(4, 1);
+            this.lbProduct.Name = "lbProduct";
+            this.lbProduct.Size = new System.Drawing.Size(68, 21);
+            this.lbProduct.TabIndex = 10;
+            this.lbProduct.Text = "□제품명";
+            this.lbProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UCMainHome
             // 
@@ -283,11 +309,14 @@
             this.Controls.Add(this.panel1);
             this.Name = "UCMainHome";
             this.Size = new System.Drawing.Size(1160, 681);
+            this.Load += new System.EventHandler(this.UCMainHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartData)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProductData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProduct)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.tlpChartData.ResumeLayout(false);
             this.tlpChartData.PerformLayout();
             this.ResumeLayout(false);
@@ -313,5 +342,7 @@
         private System.Windows.Forms.Label lbProductPercent;
         private System.Windows.Forms.Label lbProductCount;
         private System.Windows.Forms.Label lbProduct;
+        private System.Windows.Forms.Label lbProductStandard;
+        private System.Windows.Forms.Label lbPerformanceData;
     }
 }

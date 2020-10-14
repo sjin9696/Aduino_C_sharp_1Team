@@ -15,6 +15,9 @@ namespace MESProject.View
         public UCSelectWorkOrder()
         {
             InitializeComponent();
+
+            cbSearch.Text = "종합";
+            dtpFirstDate.Value = DateTime.Now.AddMonths(-1);
         }
     }
 }

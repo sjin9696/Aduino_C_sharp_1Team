@@ -87,3 +87,5 @@ C:\Users\User\Desktop\Aduino_C_sharp_1Team-LES20201012-\실행파일\MESProject\
 C:\Users\User\Desktop\Aduino_C_sharp_1Team-LES20201012-\실행파일\MESProject\MESProject\obj\Debug\MESProject.csproj.CopyComplete
 C:\Users\User\Desktop\Aduino_C_sharp_1Team-LES20201012-\실행파일\MESProject\MESProject\obj\Debug\MESProject.exe
 C:\Users\User\Desktop\Aduino_C_sharp_1Team-LES20201012-\실행파일\MESProject\MESProject\obj\Debug\MESProject.pdb
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\bin\Debug\SunnyUI.dll
+C:\LES\githubTest\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.csproj.CopyComplete

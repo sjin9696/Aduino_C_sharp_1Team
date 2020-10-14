@@ -73,6 +73,16 @@ namespace MESProject.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_create_32px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_create_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_design_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_design_32px", resourceCulture);
@@ -93,6 +103,16 @@ namespace MESProject.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_factory_32px1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_factory_32px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_home_32px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_home_32px_1", resourceCulture);
@@ -103,9 +123,39 @@ namespace MESProject.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_home_32px_11 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_home_32px_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_home_32px_12 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_home_32px_12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_purchase_order_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_purchase_order_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_purchase_order_32px1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_purchase_order_32px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +176,16 @@ namespace MESProject.Properties {
         internal static System.Drawing.Bitmap icons8_shutdown_32px {
             get {
                 object obj = ResourceManager.GetObject("icons8_shutdown_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_shutdown_32px1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_shutdown_32px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

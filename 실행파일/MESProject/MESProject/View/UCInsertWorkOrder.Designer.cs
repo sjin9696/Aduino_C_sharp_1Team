@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.tlbWorkOrder = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.tbNull = new System.Windows.Forms.TextBox();
+            this.lbNull = new System.Windows.Forms.Label();
             this.lbCount = new System.Windows.Forms.Label();
             this.tbCount = new System.Windows.Forms.TextBox();
-            this.tbCustomer = new System.Windows.Forms.TextBox();
-            this.tbNull = new System.Windows.Forms.TextBox();
-            this.lbCustomer = new System.Windows.Forms.Label();
-            this.tbProductName = new System.Windows.Forms.TextBox();
-            this.lbOrnerName = new System.Windows.Forms.Label();
-            this.lbNull = new System.Windows.Forms.Label();
-            this.tbOrnerName = new System.Windows.Forms.TextBox();
-            this.lbProductName = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lbOrderTime = new System.Windows.Forms.Label();
             this.lbTimeLimit = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.lbProductName = new System.Windows.Forms.Label();
+            this.tbProductName = new System.Windows.Forms.TextBox();
+            this.lbCustomer = new System.Windows.Forms.Label();
+            this.lbOrnerName = new System.Windows.Forms.Label();
+            this.tbCustomer = new System.Windows.Forms.TextBox();
+            this.tbOrnerName = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.pnOrderInsert = new System.Windows.Forms.Panel();
-            this.dgvWorkOrder = new System.Windows.Forms.DataGridView();
-            this.btnPush = new System.Windows.Forms.Button();
+            this.lbOrderInsert = new System.Windows.Forms.Label();
+            this.btnUpload = new System.Windows.Forms.Button();
             this.pnOrderList = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lbConfirmOrder = new System.Windows.Forms.Label();
+            this.dgvWorkOrder = new System.Windows.Forms.DataGridView();
             this.oD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dD = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,23 +60,22 @@
             this.rm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tlbWorkOrder.SuspendLayout();
             this.pnOrderInsert.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkOrder)).BeginInit();
             this.pnOrderList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkOrder)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnInsert
+            // btnAdd
             // 
-            this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnInsert.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.Location = new System.Drawing.Point(720, 297);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(80, 35);
-            this.btnInsert.TabIndex = 20;
-            this.btnInsert.Text = "확인";
-            this.btnInsert.UseVisualStyleBackColor = false;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(833, 281);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(80, 35);
+            this.btnAdd.TabIndex = 20;
+            this.btnAdd.Text = "추가";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // tlbWorkOrder
             // 
@@ -84,51 +84,56 @@
             this.tlbWorkOrder.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.58876F));
             this.tlbWorkOrder.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.21967F));
             this.tlbWorkOrder.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.9719F));
-            this.tlbWorkOrder.Controls.Add(this.dateTimePicker2, 3, 0);
+            this.tlbWorkOrder.Controls.Add(this.tbNull, 3, 5);
+            this.tlbWorkOrder.Controls.Add(this.lbNull, 2, 5);
+            this.tlbWorkOrder.Controls.Add(this.lbCount, 2, 4);
+            this.tlbWorkOrder.Controls.Add(this.tbCount, 3, 4);
             this.tlbWorkOrder.Controls.Add(this.dateTimePicker1, 1, 0);
-            this.tlbWorkOrder.Controls.Add(this.lbCount, 2, 2);
-            this.tlbWorkOrder.Controls.Add(this.tbCount, 3, 2);
-            this.tlbWorkOrder.Controls.Add(this.tbCustomer, 3, 1);
-            this.tlbWorkOrder.Controls.Add(this.tbNull, 1, 3);
-            this.tlbWorkOrder.Controls.Add(this.lbCustomer, 2, 1);
-            this.tlbWorkOrder.Controls.Add(this.tbProductName, 1, 2);
-            this.tlbWorkOrder.Controls.Add(this.lbOrnerName, 0, 1);
-            this.tlbWorkOrder.Controls.Add(this.lbNull, 0, 3);
-            this.tlbWorkOrder.Controls.Add(this.tbOrnerName, 1, 1);
-            this.tlbWorkOrder.Controls.Add(this.lbProductName, 0, 2);
             this.tlbWorkOrder.Controls.Add(this.lbOrderTime, 0, 0);
-            this.tlbWorkOrder.Controls.Add(this.lbTimeLimit, 2, 0);
-            this.tlbWorkOrder.Location = new System.Drawing.Point(86, 56);
+            this.tlbWorkOrder.Controls.Add(this.lbTimeLimit, 0, 3);
+            this.tlbWorkOrder.Controls.Add(this.dateTimePicker2, 1, 3);
+            this.tlbWorkOrder.Controls.Add(this.lbProductName, 2, 3);
+            this.tlbWorkOrder.Controls.Add(this.tbProductName, 3, 3);
+            this.tlbWorkOrder.Controls.Add(this.lbCustomer, 2, 0);
+            this.tlbWorkOrder.Controls.Add(this.lbOrnerName, 2, 1);
+            this.tlbWorkOrder.Controls.Add(this.tbCustomer, 3, 0);
+            this.tlbWorkOrder.Controls.Add(this.tbOrnerName, 3, 1);
+            this.tlbWorkOrder.Location = new System.Drawing.Point(140, 47);
             this.tlbWorkOrder.Name = "tlbWorkOrder";
-            this.tlbWorkOrder.RowCount = 4;
-            this.tlbWorkOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28F));
-            this.tlbWorkOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28F));
-            this.tlbWorkOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28F));
-            this.tlbWorkOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tlbWorkOrder.Size = new System.Drawing.Size(975, 235);
+            this.tlbWorkOrder.RowCount = 6;
+            this.tlbWorkOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.tlbWorkOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.tlbWorkOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.tlbWorkOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.tlbWorkOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.tlbWorkOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tlbWorkOrder.Size = new System.Drawing.Size(975, 228);
             this.tlbWorkOrder.TabIndex = 20;
             // 
-            // dateTimePicker2
+            // tbNull
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(646, 3);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(226, 25);
-            this.dateTimePicker2.TabIndex = 23;
+            this.tbNull.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNull.Location = new System.Drawing.Point(646, 193);
+            this.tbNull.Name = "tbNull";
+            this.tbNull.Size = new System.Drawing.Size(226, 25);
+            this.tbNull.TabIndex = 16;
             // 
-            // dateTimePicker1
+            // lbNull
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(161, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(226, 25);
-            this.dateTimePicker1.TabIndex = 22;
+            this.lbNull.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.lbNull.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNull.Location = new System.Drawing.Point(488, 190);
+            this.lbNull.Name = "lbNull";
+            this.lbNull.Size = new System.Drawing.Size(120, 32);
+            this.lbNull.TabIndex = 9;
+            this.lbNull.Text = "비고란 :";
+            this.lbNull.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbCount
             // 
             this.lbCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.lbCount.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCount.Location = new System.Drawing.Point(488, 130);
+            this.lbCount.Location = new System.Drawing.Point(488, 152);
             this.lbCount.Name = "lbCount";
             this.lbCount.Size = new System.Drawing.Size(120, 32);
             this.lbCount.TabIndex = 12;
@@ -138,86 +143,18 @@
             // tbCount
             // 
             this.tbCount.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCount.Location = new System.Drawing.Point(646, 133);
+            this.tbCount.Location = new System.Drawing.Point(646, 155);
             this.tbCount.Name = "tbCount";
             this.tbCount.Size = new System.Drawing.Size(226, 25);
             this.tbCount.TabIndex = 19;
             // 
-            // tbCustomer
+            // dateTimePicker1
             // 
-            this.tbCustomer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCustomer.Location = new System.Drawing.Point(646, 68);
-            this.tbCustomer.Name = "tbCustomer";
-            this.tbCustomer.Size = new System.Drawing.Size(226, 25);
-            this.tbCustomer.TabIndex = 18;
-            // 
-            // tbNull
-            // 
-            this.tbNull.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNull.Location = new System.Drawing.Point(161, 198);
-            this.tbNull.Name = "tbNull";
-            this.tbNull.Size = new System.Drawing.Size(226, 25);
-            this.tbNull.TabIndex = 16;
-            // 
-            // lbCustomer
-            // 
-            this.lbCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.lbCustomer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCustomer.Location = new System.Drawing.Point(488, 65);
-            this.lbCustomer.Name = "lbCustomer";
-            this.lbCustomer.Size = new System.Drawing.Size(120, 32);
-            this.lbCustomer.TabIndex = 11;
-            this.lbCustomer.Text = "납품처 :";
-            this.lbCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tbProductName
-            // 
-            this.tbProductName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbProductName.Location = new System.Drawing.Point(161, 133);
-            this.tbProductName.Name = "tbProductName";
-            this.tbProductName.Size = new System.Drawing.Size(226, 25);
-            this.tbProductName.TabIndex = 15;
-            // 
-            // lbOrnerName
-            // 
-            this.lbOrnerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.lbOrnerName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOrnerName.Location = new System.Drawing.Point(3, 65);
-            this.lbOrnerName.Name = "lbOrnerName";
-            this.lbOrnerName.Size = new System.Drawing.Size(120, 32);
-            this.lbOrnerName.TabIndex = 7;
-            this.lbOrnerName.Text = "지시담당자 :";
-            this.lbOrnerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbNull
-            // 
-            this.lbNull.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.lbNull.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNull.Location = new System.Drawing.Point(3, 195);
-            this.lbNull.Name = "lbNull";
-            this.lbNull.Size = new System.Drawing.Size(120, 32);
-            this.lbNull.TabIndex = 9;
-            this.lbNull.Text = "비고란 :";
-            this.lbNull.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tbOrnerName
-            // 
-            this.tbOrnerName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbOrnerName.Location = new System.Drawing.Point(161, 68);
-            this.tbOrnerName.Name = "tbOrnerName";
-            this.tbOrnerName.Size = new System.Drawing.Size(226, 25);
-            this.tbOrnerName.TabIndex = 14;
-            // 
-            // lbProductName
-            // 
-            this.lbProductName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.lbProductName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProductName.Location = new System.Drawing.Point(3, 130);
-            this.lbProductName.Name = "lbProductName";
-            this.lbProductName.Size = new System.Drawing.Size(120, 32);
-            this.lbProductName.TabIndex = 8;
-            this.lbProductName.Text = "제품명 :";
-            this.lbProductName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(161, 3);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(226, 25);
+            this.dateTimePicker1.TabIndex = 22;
             // 
             // lbOrderTime
             // 
@@ -227,26 +164,91 @@
             this.lbOrderTime.Name = "lbOrderTime";
             this.lbOrderTime.Size = new System.Drawing.Size(120, 32);
             this.lbOrderTime.TabIndex = 0;
-            this.lbOrderTime.Text = "지시일 :";
+            this.lbOrderTime.Text = "작업지시일";
             this.lbOrderTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbTimeLimit
             // 
             this.lbTimeLimit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.lbTimeLimit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTimeLimit.Location = new System.Drawing.Point(488, 0);
+            this.lbTimeLimit.Location = new System.Drawing.Point(3, 114);
             this.lbTimeLimit.Name = "lbTimeLimit";
             this.lbTimeLimit.Size = new System.Drawing.Size(120, 32);
             this.lbTimeLimit.TabIndex = 10;
-            this.lbTimeLimit.Text = "기한일 :";
+            this.lbTimeLimit.Text = "작업기한일 :";
             this.lbTimeLimit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(161, 117);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(226, 25);
+            this.dateTimePicker2.TabIndex = 23;
+            // 
+            // lbProductName
+            // 
+            this.lbProductName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.lbProductName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProductName.Location = new System.Drawing.Point(488, 114);
+            this.lbProductName.Name = "lbProductName";
+            this.lbProductName.Size = new System.Drawing.Size(120, 32);
+            this.lbProductName.TabIndex = 8;
+            this.lbProductName.Text = "제품명 :";
+            this.lbProductName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tbProductName
+            // 
+            this.tbProductName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbProductName.Location = new System.Drawing.Point(646, 117);
+            this.tbProductName.Name = "tbProductName";
+            this.tbProductName.Size = new System.Drawing.Size(226, 25);
+            this.tbProductName.TabIndex = 15;
+            // 
+            // lbCustomer
+            // 
+            this.lbCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.lbCustomer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCustomer.Location = new System.Drawing.Point(488, 0);
+            this.lbCustomer.Name = "lbCustomer";
+            this.lbCustomer.Size = new System.Drawing.Size(120, 32);
+            this.lbCustomer.TabIndex = 11;
+            this.lbCustomer.Text = "납품처 :";
+            this.lbCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbOrnerName
+            // 
+            this.lbOrnerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.lbOrnerName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOrnerName.Location = new System.Drawing.Point(488, 38);
+            this.lbOrnerName.Name = "lbOrnerName";
+            this.lbOrnerName.Size = new System.Drawing.Size(120, 32);
+            this.lbOrnerName.TabIndex = 7;
+            this.lbOrnerName.Text = "지시담당자 :";
+            this.lbOrnerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tbCustomer
+            // 
+            this.tbCustomer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCustomer.Location = new System.Drawing.Point(646, 3);
+            this.tbCustomer.Name = "tbCustomer";
+            this.tbCustomer.Size = new System.Drawing.Size(226, 25);
+            this.tbCustomer.TabIndex = 18;
+            // 
+            // tbOrnerName
+            // 
+            this.tbOrnerName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbOrnerName.Location = new System.Drawing.Point(646, 41);
+            this.tbOrnerName.Name = "tbOrnerName";
+            this.tbOrnerName.Size = new System.Drawing.Size(226, 25);
+            this.tbOrnerName.TabIndex = 14;
             // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(863, 297);
+            this.btnClear.Location = new System.Drawing.Point(932, 281);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(80, 35);
             this.btnClear.TabIndex = 21;
@@ -256,53 +258,67 @@
             // pnOrderInsert
             // 
             this.pnOrderInsert.BackColor = System.Drawing.Color.White;
+            this.pnOrderInsert.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnOrderInsert.Controls.Add(this.lbOrderInsert);
             this.pnOrderInsert.Controls.Add(this.btnClear);
             this.pnOrderInsert.Controls.Add(this.tlbWorkOrder);
-            this.pnOrderInsert.Controls.Add(this.btnInsert);
+            this.pnOrderInsert.Controls.Add(this.btnAdd);
             this.pnOrderInsert.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnOrderInsert.Location = new System.Drawing.Point(0, 0);
             this.pnOrderInsert.Name = "pnOrderInsert";
-            this.pnOrderInsert.Size = new System.Drawing.Size(1160, 342);
+            this.pnOrderInsert.Size = new System.Drawing.Size(1160, 332);
             this.pnOrderInsert.TabIndex = 0;
             // 
-            // dgvWorkOrder
+            // lbOrderInsert
             // 
-            this.dgvWorkOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWorkOrder.Location = new System.Drawing.Point(3, 14);
-            this.dgvWorkOrder.Name = "dgvWorkOrder";
-            this.dgvWorkOrder.RowTemplate.Height = 23;
-            this.dgvWorkOrder.Size = new System.Drawing.Size(1154, 258);
-            this.dgvWorkOrder.TabIndex = 0;
+            this.lbOrderInsert.AutoSize = true;
+            this.lbOrderInsert.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOrderInsert.Location = new System.Drawing.Point(10, 10);
+            this.lbOrderInsert.Name = "lbOrderInsert";
+            this.lbOrderInsert.Size = new System.Drawing.Size(64, 17);
+            this.lbOrderInsert.TabIndex = 22;
+            this.lbOrderInsert.Text = "지시 입력";
             // 
-            // btnPush
+            // btnUpload
             // 
-            this.btnPush.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.btnPush.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnPush.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPush.Location = new System.Drawing.Point(863, 275);
-            this.btnPush.Name = "btnPush";
-            this.btnPush.Size = new System.Drawing.Size(80, 35);
-            this.btnPush.TabIndex = 22;
-            this.btnPush.Text = "푸시";
-            this.btnPush.UseVisualStyleBackColor = false;
-            this.btnPush.Click += new System.EventHandler(this.btnPush_Click);
+            this.btnUpload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnUpload.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload.Location = new System.Drawing.Point(932, 291);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(80, 35);
+            this.btnUpload.TabIndex = 22;
+            this.btnUpload.Text = "업로드";
+            this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnPush_Click);
             // 
             // pnOrderList
             // 
             this.pnOrderList.BackColor = System.Drawing.Color.White;
-            this.pnOrderList.Controls.Add(this.dataGridView1);
-            this.pnOrderList.Controls.Add(this.btnPush);
+            this.pnOrderList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnOrderList.Controls.Add(this.lbConfirmOrder);
             this.pnOrderList.Controls.Add(this.dgvWorkOrder);
+            this.pnOrderList.Controls.Add(this.btnUpload);
             this.pnOrderList.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnOrderList.Location = new System.Drawing.Point(0, 368);
+            this.pnOrderList.Location = new System.Drawing.Point(0, 338);
             this.pnOrderList.Name = "pnOrderList";
-            this.pnOrderList.Size = new System.Drawing.Size(1160, 313);
+            this.pnOrderList.Size = new System.Drawing.Size(1160, 343);
             this.pnOrderList.TabIndex = 1;
             // 
-            // dataGridView1
+            // lbConfirmOrder
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lbConfirmOrder.AutoSize = true;
+            this.lbConfirmOrder.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbConfirmOrder.Location = new System.Drawing.Point(10, 10);
+            this.lbConfirmOrder.Name = "lbConfirmOrder";
+            this.lbConfirmOrder.Size = new System.Drawing.Size(64, 17);
+            this.lbConfirmOrder.TabIndex = 23;
+            this.lbConfirmOrder.Text = "지시 확인";
+            // 
+            // dgvWorkOrder
+            // 
+            this.dgvWorkOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkOrder.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.oD,
             this.eN,
             this.dD,
@@ -310,11 +326,11 @@
             this.pQ,
             this.cC,
             this.rm});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 14);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(1154, 258);
-            this.dataGridView1.TabIndex = 23;
+            this.dgvWorkOrder.Location = new System.Drawing.Point(140, 27);
+            this.dgvWorkOrder.Name = "dgvWorkOrder";
+            this.dgvWorkOrder.RowTemplate.Height = 23;
+            this.dgvWorkOrder.Size = new System.Drawing.Size(872, 258);
+            this.dgvWorkOrder.TabIndex = 23;
             // 
             // oD
             // 
@@ -355,6 +371,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnOrderList);
             this.Controls.Add(this.pnOrderInsert);
             this.Name = "UCInsertWorkOrder";
@@ -362,15 +379,16 @@
             this.tlbWorkOrder.ResumeLayout(false);
             this.tlbWorkOrder.PerformLayout();
             this.pnOrderInsert.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkOrder)).EndInit();
+            this.pnOrderInsert.PerformLayout();
             this.pnOrderList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.pnOrderList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkOrder)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TableLayoutPanel tlbWorkOrder;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -379,7 +397,6 @@
         private System.Windows.Forms.TextBox tbCustomer;
         private System.Windows.Forms.TextBox tbNull;
         private System.Windows.Forms.Label lbCustomer;
-        private System.Windows.Forms.TextBox tbProductName;
         private System.Windows.Forms.Label lbOrnerName;
         private System.Windows.Forms.Label lbNull;
         private System.Windows.Forms.TextBox tbOrnerName;
@@ -388,10 +405,9 @@
         private System.Windows.Forms.Label lbTimeLimit;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Panel pnOrderInsert;
-        private System.Windows.Forms.DataGridView dgvWorkOrder;
-        private System.Windows.Forms.Button btnPush;
+        private System.Windows.Forms.Button btnUpload;
         private System.Windows.Forms.Panel pnOrderList;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvWorkOrder;
         private System.Windows.Forms.DataGridViewTextBoxColumn oD;
         private System.Windows.Forms.DataGridViewTextBoxColumn eN;
         private System.Windows.Forms.DataGridViewTextBoxColumn dD;
@@ -399,5 +415,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pQ;
         private System.Windows.Forms.DataGridViewTextBoxColumn cC;
         private System.Windows.Forms.DataGridViewTextBoxColumn rm;
+        private System.Windows.Forms.Label lbOrderInsert;
+        private System.Windows.Forms.Label lbConfirmOrder;
+        private System.Windows.Forms.TextBox tbProductName;
     }
 }
