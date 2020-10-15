@@ -14,9 +14,9 @@ namespace MESProject.View
     // 이상헌
     public partial class UCSelectWorkOrder : UserControl
     {
-        DateTime tstart;
-        DateTime tend;
-        MssqlCmdTable mscmd = new MssqlCmdTable();
+        private DateTime tstart;
+        private DateTime tend;
+        private MssqlCmdTable mscmd = new MssqlCmdTable();
         public UCSelectWorkOrder()
         {
             InitializeComponent();
@@ -44,8 +44,8 @@ namespace MESProject.View
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             //2020-10-15 오전 11:34:26 -> 2020-10-15 오전 12:00:00
-            tstart = dateTimePicker1.Value.Date;
-            Console.WriteLine(tstart);
+            this.tstart = dateTimePicker1.Value.Date;
+            Console.WriteLine(this.tstart);
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace MESProject.View
             string tbt = textBoxSearch.Text;
             string cbt = comboBoxSearch.Text;
 
-            dataGridView1.DataSource = mscmd.doDataTable(tstart, tend, cbt, tbt);
+            dataGridView1.DataSource = this.mscmd.doDataTableOrder(this.tstart, this.tend, cbt, tbt);
         }
     }
 }
