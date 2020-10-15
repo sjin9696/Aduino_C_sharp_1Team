@@ -14,6 +14,8 @@ namespace MESProject.View
     public partial class UCInsertWorkOrder : UserControl
     {
         MssqlCmdTable mscmd = new MssqlCmdTable();
+        int i_SelRow;
+        int i_SelCol;
         public UCInsertWorkOrder()
         {
             InitializeComponent();
@@ -52,7 +54,7 @@ namespace MESProject.View
 
             int productQuantity = 0;
             int.TryParse(tbCount.Text, out productQuantity);
-                //////////////////////////이렇게하니까 되네욤////////////////////////
+            //////////////////////////이렇게하니까 되네욤////////////////////////
             string productName = cbProductName.SelectedItem as string;
             ///////////////////////////////////////////////////////////////////
             string employeeName = tbOrnerName.Text;
@@ -61,8 +63,8 @@ namespace MESProject.View
             string startOrder = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             string endOrder = dateTimePicker2.Value.ToString("yyyy-MM-dd");
 
-            
-                
+
+
             if (0 <= productQuantity && productQuantity <= 999)
             {
                 if (productName != null)
@@ -85,10 +87,99 @@ namespace MESProject.View
         }
 
         private void btnClear_Click(object sender, EventArgs e)
-        {
-            //클리어는 textbox만클리어?
-            //아니면 그리드뷰데이터도 클리어?
-            //그리드뷰 데이터 지우는것도 있으면 좋을거같아요!
+        {   
+            tbCount.Text = string.Empty;
+            cbProductName.Text = string.Empty;
+            tbOrnerName.Text = string.Empty; ;
+            tbCustomer.Text = string.Empty; ;
+            tbNull.Text = string.Empty;
+            dateTimePicker1.Value = DateTime.Now;
+            dateTimePicker2.Value = DateTime.Now.AddDays(7);
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (btn.Text == "수정")
+            {
+                btnUpdateFalse.Visible = true;
+                btn.Visible = false;
+                dgvWorkOrder.ReadOnly = false;
+            }
+            else if (btn.Text == "수정불가")
+            {
+                btnUpdateTrue.Visible = true;
+                btn.Visible = false;
+                dgvWorkOrder.ReadOnly = true;
+            }
+        }
+
+        private void dgvWorkOrder_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            string s;
+            int a = 0;
+            if (dgvWorkOrder.Columns[e.ColumnIndex].Name.ToString() == "pQ")
+            {
+                s = dgvWorkOrder.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+                if(int.TryParse(s, out a))
+                {
+                    if (a < 0 || 999 < a)
+                    {
+                        dgvWorkOrder.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = 0;
+                        MessageBox.Show("0~999사이의값을 입력해주세요.");
+                    }
+                }
+                else
+                {
+                    dgvWorkOrder.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = 0;
+                    MessageBox.Show("수량을 다시 입력하세요");
+                }
+                
+            }
+        }
+
+        private void dgvWorkOrder_MouseUp(object sender, MouseEventArgs e)
+        {
+            //동적으로 좌표를 정할경우
+            //소스로해야함
+            if(e.Button == MouseButtons.Right)
+            {
+                DataGridView.HitTestInfo info = dgvWorkOrder.HitTest(e.X, e.Y);
+                if(info.Type == DataGridViewHitTestType.Cell)
+                {
+                    ContextMenuStrip mnu = new ContextMenuStrip();
+                    ToolStripMenuItem mnuUpdate = new ToolStripMenuItem("Update");
+                    ToolStripMenuItem mnuCut = new ToolStripMenuItem("Cut");
+                    
+
+                    //Assign event handlers
+                    mnuUpdate.Click += new EventHandler(mnuUpdate_Click);
+                    mnuCut.Click += new EventHandler(mnuCut_Click);
+
+                    //Add to main context menu
+                    mnu.Items.AddRange(new ToolStripItem[] { mnuUpdate, mnuCut });
+
+                    //Assign to datagridview
+                    dgvWorkOrder.ContextMenuStrip = mnu;
+
+                    i_SelRow = info.RowIndex;
+                    i_SelCol = info.ColumnIndex;
+                }
+                
+            }
+            
+        }
+        private void mnuUpdate_Click(object sender, EventArgs e)
+        {//아직구현안됨
+            //DataGridView dv = dgvWorkOrder;
+            //dgvWorkOrder.ReadOnly = false;
+            //Console.WriteLine(i_SelRow+"");
+        }
+        private void mnuCut_Click(object sender, EventArgs e)
+        {
+            DataGridView dv = dgvWorkOrder;
+            dgvWorkOrder.Rows.Remove(dgvWorkOrder.Rows[i_SelRow]);
+        }
+       
     }
 }

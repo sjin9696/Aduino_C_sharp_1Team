@@ -33,7 +33,6 @@ namespace MESProject.DBConnect
                 Console.WriteLine("연결끊기성공");
                 conn.Close();
             }
-
         }
 
 

@@ -49,8 +49,10 @@
             this.lbOrderInsert = new System.Windows.Forms.Label();
             this.btnUpload = new System.Windows.Forms.Button();
             this.pnOrderList = new System.Windows.Forms.Panel();
+            this.btnUpdateTrue = new System.Windows.Forms.Button();
             this.lbConfirmOrder = new System.Windows.Forms.Label();
             this.dgvWorkOrder = new System.Windows.Forms.DataGridView();
+            this.btnUpdateFalse = new System.Windows.Forms.Button();
             this.oD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dD = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -301,14 +303,29 @@
             // 
             this.pnOrderList.BackColor = System.Drawing.Color.White;
             this.pnOrderList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnOrderList.Controls.Add(this.btnUpdateTrue);
             this.pnOrderList.Controls.Add(this.lbConfirmOrder);
             this.pnOrderList.Controls.Add(this.dgvWorkOrder);
             this.pnOrderList.Controls.Add(this.btnUpload);
+            this.pnOrderList.Controls.Add(this.btnUpdateFalse);
             this.pnOrderList.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnOrderList.Location = new System.Drawing.Point(0, 338);
             this.pnOrderList.Name = "pnOrderList";
             this.pnOrderList.Size = new System.Drawing.Size(1160, 343);
             this.pnOrderList.TabIndex = 1;
+            // 
+            // btnUpdateTrue
+            // 
+            this.btnUpdateTrue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.btnUpdateTrue.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnUpdateTrue.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateTrue.Location = new System.Drawing.Point(1035, 27);
+            this.btnUpdateTrue.Name = "btnUpdateTrue";
+            this.btnUpdateTrue.Size = new System.Drawing.Size(80, 35);
+            this.btnUpdateTrue.TabIndex = 23;
+            this.btnUpdateTrue.Text = "수정";
+            this.btnUpdateTrue.UseVisualStyleBackColor = false;
+            this.btnUpdateTrue.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // lbConfirmOrder
             // 
@@ -333,44 +350,69 @@
             this.rm});
             this.dgvWorkOrder.Location = new System.Drawing.Point(140, 27);
             this.dgvWorkOrder.Name = "dgvWorkOrder";
+            this.dgvWorkOrder.ReadOnly = true;
             this.dgvWorkOrder.RowTemplate.Height = 23;
             this.dgvWorkOrder.Size = new System.Drawing.Size(872, 258);
             this.dgvWorkOrder.TabIndex = 23;
+            this.dgvWorkOrder.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWorkOrder_CellValueChanged);
+            this.dgvWorkOrder.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dgvWorkOrder_MouseUp);
+            // 
+            // btnUpdateFalse
+            // 
+            this.btnUpdateFalse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.btnUpdateFalse.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnUpdateFalse.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateFalse.Location = new System.Drawing.Point(1035, 27);
+            this.btnUpdateFalse.Name = "btnUpdateFalse";
+            this.btnUpdateFalse.Size = new System.Drawing.Size(80, 35);
+            this.btnUpdateFalse.TabIndex = 24;
+            this.btnUpdateFalse.Text = "수정불가";
+            this.btnUpdateFalse.UseVisualStyleBackColor = false;
+            this.btnUpdateFalse.Visible = false;
+            this.btnUpdateFalse.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // oD
             // 
             this.oD.HeaderText = "지시일";
             this.oD.Name = "oD";
+            this.oD.ReadOnly = true;
             // 
             // eN
             // 
             this.eN.HeaderText = "지시담당자";
             this.eN.Name = "eN";
+            this.eN.ReadOnly = true;
             // 
             // dD
             // 
             this.dD.HeaderText = "기한일";
             this.dD.Name = "dD";
+            this.dD.ReadOnly = true;
             // 
             // pN
             // 
             this.pN.HeaderText = "제품명";
             this.pN.Name = "pN";
+            this.pN.ReadOnly = true;
             // 
             // pQ
             // 
+            this.pQ.DataPropertyName = "productionQuantity";
             this.pQ.HeaderText = "수량";
             this.pQ.Name = "pQ";
+            this.pQ.ReadOnly = true;
             // 
             // cC
             // 
             this.cC.HeaderText = "납품처";
             this.cC.Name = "cC";
+            this.cC.ReadOnly = true;
             // 
             // rm
             // 
             this.rm.HeaderText = "비고란";
             this.rm.Name = "rm";
+            this.rm.ReadOnly = true;
             // 
             // UCInsertWorkOrder
             // 
@@ -413,6 +455,11 @@
         private System.Windows.Forms.Button btnUpload;
         private System.Windows.Forms.Panel pnOrderList;
         private System.Windows.Forms.DataGridView dgvWorkOrder;
+        private System.Windows.Forms.Label lbOrderInsert;
+        private System.Windows.Forms.Label lbConfirmOrder;
+        private System.Windows.Forms.ComboBox cbProductName;
+        private System.Windows.Forms.Button btnUpdateTrue;
+        private System.Windows.Forms.Button btnUpdateFalse;
         private System.Windows.Forms.DataGridViewTextBoxColumn oD;
         private System.Windows.Forms.DataGridViewTextBoxColumn eN;
         private System.Windows.Forms.DataGridViewTextBoxColumn dD;
@@ -420,8 +467,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pQ;
         private System.Windows.Forms.DataGridViewTextBoxColumn cC;
         private System.Windows.Forms.DataGridViewTextBoxColumn rm;
-        private System.Windows.Forms.Label lbOrderInsert;
-        private System.Windows.Forms.Label lbConfirmOrder;
-        private System.Windows.Forms.ComboBox cbProductName;
     }
 }
