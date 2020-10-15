@@ -11,20 +11,30 @@ namespace MESProject
 {
     class MainDataSource
     {
-        // 이상헌 mssql과 연동되어 SelectWorkOrder 프로시져 조회
+
+        //table 조회기능
         public DataTable doDataTable(DateTime dt1, DateTime dt2, string combotext, string text)
         {
-            
-            SqlCommand cmd = new SqlCommand("exec SelectCTL @combotext, @boxtext, @t_end, @t_start", DataSources.getConnection());
-            cmd.Parameters.AddWithValue("@combotext", combotext);
-            cmd.Parameters.AddWithValue("@boxtext", text);
-            cmd.Parameters.AddWithValue("@t_end", dt2);
-            cmd.Parameters.AddWithValue("@t_start", dt1);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
-
-            sda.Fill(ds);
-
+            SqlConnection conn = DataSources.getConnection();
+            try
+            {
+                SqlCommand cmd = new SqlCommand("exec Selecttest @combotext, @boxtext, @t_end, @t_start", conn);
+                cmd.Parameters.AddWithValue("@combotext", combotext);
+                cmd.Parameters.AddWithValue("@boxtext", text);
+                cmd.Parameters.AddWithValue("@t_end", dt2);
+                cmd.Parameters.AddWithValue("@t_start", dt1);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                sda.Fill(ds);
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc.StackTrace);
+                return null;
+            }
+            finally {
+                DataSources.setClose(conn);
+            }
             return ds.Tables[0];
         }
     }

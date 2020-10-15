@@ -82,3 +82,17 @@ C:\Users\User\Desktop\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\ob
 C:\Users\User\Desktop\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.exe
 C:\Users\User\Desktop\Aduino_C_sharp_1Team\실행파일\MESProject\MESProject\obj\Debug\MESProject.pdb
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\bin\Debug\MESProject.exe.config
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\bin\Debug\MESProject.exe
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\bin\Debug\MESProject.pdb
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.csprojAssemblyReference.cache
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.Form1.resources
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.Properties.Resources.resources
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.View.UCInsertWorkOrder.resources
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.View.UCMainHome.resources
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.View.UCSelectWorkComplete.resources
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.View.UCSelectWorkOrder.resources
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.csproj.GenerateResource.cache
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.csproj.CoreCompileInputs.cache
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.exe
+C:\Git_Hub\Aduino_C_sharp_1Team\lee_sang_heon_20201013\MESProject\MESProject\obj\Debug\MESProject.pdb

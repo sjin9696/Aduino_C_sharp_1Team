@@ -12,7 +12,7 @@ namespace MESProject
     class DataSources
     {
         private static string strconn =
-            "Data Source=192.168.0.19;Initial Catalog=SANGSAN;User ID=sa;Password=1234";
+            "Data Source=192.168.0.19;Initial Catalog=Product"+" Manager;User ID=sa;Password=1234";
         private static SqlConnection conn = null;
 
         public static SqlConnection getConnection()//메서드실행 - 객체생성 - DB접속
@@ -33,7 +33,7 @@ namespace MESProject
             return conn;
         }
 
-        public static void setClose()
+        public static void setClose(SqlConnection conn)
         {
             try
             {

@@ -59,10 +59,7 @@ namespace MESProject.View
             string tbt = textBoxSearch.Text;
             string cbt = comboBoxSearch.Text;
 
-            dataGridView1.DataSource = mds.doDataTable(tstart, tend, cbt,tbt);
-
-            //mds.doDataTable().Rows
-
+            dataGridView1.DataSource = mds.doDataTable(tstart, tend, cbt, tbt);
         }
     }
 }
