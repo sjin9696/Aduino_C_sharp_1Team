@@ -179,5 +179,8 @@
   <ItemGroup>
     <None Include="Resources\icons8_shutdown_32px1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\program_logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

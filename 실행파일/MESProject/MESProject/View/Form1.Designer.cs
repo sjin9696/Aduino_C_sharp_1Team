@@ -37,19 +37,21 @@
             this.pnTop = new System.Windows.Forms.Panel();
             this.lbProgramName = new System.Windows.Forms.Label();
             this.pnCenter = new System.Windows.Forms.Panel();
+            this.ucMainHome1 = new MESProject.View.UCMainHome();
+            this.ucSelectWorkOrder1 = new MESProject.View.UCSelectWorkOrder();
+            this.ucSelectWorkComplete1 = new MESProject.View.UCSelectWorkComplete();
+            this.ucInsertWorkOrder1 = new MESProject.View.UCInsertWorkOrder();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnShutDown = new System.Windows.Forms.Button();
             this.btnWCSelect = new System.Windows.Forms.Button();
             this.btnWOSelect = new System.Windows.Forms.Button();
             this.btnWOinsert = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.ucMainHome1 = new MESProject.View.UCMainHome();
-            this.ucSelectWorkOrder1 = new MESProject.View.UCSelectWorkOrder();
-            this.ucSelectWorkComplete1 = new MESProject.View.UCSelectWorkComplete();
-            this.ucInsertWorkOrder1 = new MESProject.View.UCInsertWorkOrder();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnLeft.SuspendLayout();
             this.pnTop.SuspendLayout();
             this.pnCenter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnLeft
@@ -74,7 +76,7 @@
             // 
             this.lbDBIP.AutoSize = true;
             this.lbDBIP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDBIP.ForeColor = System.Drawing.Color.Black;
+            this.lbDBIP.ForeColor = System.Drawing.Color.White;
             this.lbDBIP.Location = new System.Drawing.Point(849, 24);
             this.lbDBIP.Name = "lbDBIP";
             this.lbDBIP.Size = new System.Drawing.Size(45, 17);
@@ -85,7 +87,7 @@
             // 
             this.lbNowDate.AutoSize = true;
             this.lbNowDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNowDate.ForeColor = System.Drawing.Color.Black;
+            this.lbNowDate.ForeColor = System.Drawing.Color.White;
             this.lbNowDate.Location = new System.Drawing.Point(922, 6);
             this.lbNowDate.Name = "lbNowDate";
             this.lbNowDate.Size = new System.Drawing.Size(126, 17);
@@ -96,7 +98,7 @@
             // 
             this.lbDate.AutoSize = true;
             this.lbDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDate.ForeColor = System.Drawing.Color.Black;
+            this.lbDate.ForeColor = System.Drawing.Color.White;
             this.lbDate.Location = new System.Drawing.Point(849, 6);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(67, 17);
@@ -107,7 +109,7 @@
             // 
             this.lbIPNum.AutoSize = true;
             this.lbIPNum.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIPNum.ForeColor = System.Drawing.Color.Black;
+            this.lbIPNum.ForeColor = System.Drawing.Color.White;
             this.lbIPNum.Location = new System.Drawing.Point(968, 24);
             this.lbIPNum.Name = "lbIPNum";
             this.lbIPNum.Size = new System.Drawing.Size(80, 17);
@@ -117,6 +119,7 @@
             // pnTop
             // 
             this.pnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(114)))), ((int)(((byte)(210)))));
+            this.pnTop.Controls.Add(this.pictureBox1);
             this.pnTop.Controls.Add(this.lbProgramName);
             this.pnTop.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnTop.Location = new System.Drawing.Point(0, 0);
@@ -146,6 +149,42 @@
             this.pnCenter.Name = "pnCenter";
             this.pnCenter.Size = new System.Drawing.Size(1160, 681);
             this.pnCenter.TabIndex = 2;
+            // 
+            // ucMainHome1
+            // 
+            this.ucMainHome1.BackColor = System.Drawing.Color.White;
+            this.ucMainHome1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucMainHome1.Location = new System.Drawing.Point(0, 0);
+            this.ucMainHome1.Name = "ucMainHome1";
+            this.ucMainHome1.Size = new System.Drawing.Size(1160, 681);
+            this.ucMainHome1.TabIndex = 3;
+            // 
+            // ucSelectWorkOrder1
+            // 
+            this.ucSelectWorkOrder1.BackColor = System.Drawing.Color.White;
+            this.ucSelectWorkOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucSelectWorkOrder1.Location = new System.Drawing.Point(0, 0);
+            this.ucSelectWorkOrder1.Name = "ucSelectWorkOrder1";
+            this.ucSelectWorkOrder1.Size = new System.Drawing.Size(1160, 681);
+            this.ucSelectWorkOrder1.TabIndex = 2;
+            // 
+            // ucSelectWorkComplete1
+            // 
+            this.ucSelectWorkComplete1.BackColor = System.Drawing.Color.White;
+            this.ucSelectWorkComplete1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucSelectWorkComplete1.Location = new System.Drawing.Point(0, 0);
+            this.ucSelectWorkComplete1.Name = "ucSelectWorkComplete1";
+            this.ucSelectWorkComplete1.Size = new System.Drawing.Size(1160, 681);
+            this.ucSelectWorkComplete1.TabIndex = 1;
+            // 
+            // ucInsertWorkOrder1
+            // 
+            this.ucInsertWorkOrder1.BackColor = System.Drawing.Color.White;
+            this.ucInsertWorkOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucInsertWorkOrder1.Location = new System.Drawing.Point(0, 0);
+            this.ucInsertWorkOrder1.Name = "ucInsertWorkOrder1";
+            this.ucInsertWorkOrder1.Size = new System.Drawing.Size(1160, 681);
+            this.ucInsertWorkOrder1.TabIndex = 0;
             // 
             // timer1
             // 
@@ -269,41 +308,15 @@
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // ucMainHome1
+            // pictureBox1
             // 
-            this.ucMainHome1.BackColor = System.Drawing.Color.White;
-            this.ucMainHome1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucMainHome1.Location = new System.Drawing.Point(0, 0);
-            this.ucMainHome1.Name = "ucMainHome1";
-            this.ucMainHome1.Size = new System.Drawing.Size(1160, 681);
-            this.ucMainHome1.TabIndex = 3;
-            // 
-            // ucSelectWorkOrder1
-            // 
-            this.ucSelectWorkOrder1.BackColor = System.Drawing.Color.White;
-            this.ucSelectWorkOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucSelectWorkOrder1.Location = new System.Drawing.Point(0, 0);
-            this.ucSelectWorkOrder1.Name = "ucSelectWorkOrder1";
-            this.ucSelectWorkOrder1.Size = new System.Drawing.Size(1160, 681);
-            this.ucSelectWorkOrder1.TabIndex = 2;
-            // 
-            // ucSelectWorkComplete1
-            // 
-            this.ucSelectWorkComplete1.BackColor = System.Drawing.Color.White;
-            this.ucSelectWorkComplete1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucSelectWorkComplete1.Location = new System.Drawing.Point(0, 0);
-            this.ucSelectWorkComplete1.Name = "ucSelectWorkComplete1";
-            this.ucSelectWorkComplete1.Size = new System.Drawing.Size(1160, 681);
-            this.ucSelectWorkComplete1.TabIndex = 1;
-            // 
-            // ucInsertWorkOrder1
-            // 
-            this.ucInsertWorkOrder1.BackColor = System.Drawing.Color.White;
-            this.ucInsertWorkOrder1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucInsertWorkOrder1.Location = new System.Drawing.Point(0, 0);
-            this.ucInsertWorkOrder1.Name = "ucInsertWorkOrder1";
-            this.ucInsertWorkOrder1.Size = new System.Drawing.Size(1160, 681);
-            this.ucInsertWorkOrder1.TabIndex = 0;
+            this.pictureBox1.Image = global::MESProject.Properties.Resources.program_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(278, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -322,6 +335,7 @@
             this.pnTop.ResumeLayout(false);
             this.pnTop.PerformLayout();
             this.pnCenter.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,6 +360,7 @@
         private System.Windows.Forms.Button btnShutDown;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbProgramName;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
