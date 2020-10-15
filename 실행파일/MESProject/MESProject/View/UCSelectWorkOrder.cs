@@ -51,7 +51,7 @@ namespace MESProject.View
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             //2020-10-15 오전 11:34:26 -> 2020-10-16 오전 12:00:00
-            tend = dateTimePicker2.Value.Date.AddHours(24);
+            tend = dateTimePicker2.Value.Date;
             Console.WriteLine(tend);
         }
 
