@@ -44,33 +44,46 @@ namespace MESProject.View
         float perCnt2 = 0;
         float perCnt3 = 0;
 
-        private void UCMainHome_Load(object sender, EventArgs e)
+        private void UCMainHome_Load(object sender, EventArgs e) //운수 -> 진영 -> 은수
         {
-            DataSet ds = GetTblWork();
-            foreach (DataRow row in ds.Tables[0].Rows)
+            try
             {
-                // 데이터베이스 칼럼 수정필
-                //Console.WriteLine(row[1].ToString() + "");
+                DataSet ds = GetTblWork();
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    // 데이터베이스 칼럼 수정필
+                    string pNameTableRow = row[0].ToString();
 
-                ledCnt[i] = int.Parse(row[1].ToString());
-                i++;
+                    List<string> pLightList = new List<string> { "light_001", "light_002", "light_003" };
+                    if (pLightList.Contains(pNameTableRow))
+                    {
+                        Console.WriteLine("UCMainHome_Load: 56 LINE " + row[1].ToString());
+                        Console.WriteLine("UCMainHome_Load: 56 LINE " + row[0].ToString());
+                        ledCnt[i] = int.Parse(row[1].ToString());
+                        chartData.Series[0].Points.AddXY(row[0], row[1]);
+                        i++;
+                    }
+                }
 
-                chartData.Series[0].Points.AddXY(row[0], row[1]);
+                sumCnt = ledCnt[0] + ledCnt[1] + ledCnt[2];
+
+                perCnt1 = float.Parse(ledCnt[0].ToString()) / float.Parse(sumCnt.ToString());
+                perCnt2 = float.Parse(ledCnt[1].ToString()) / float.Parse(sumCnt.ToString());
+                perCnt3 = float.Parse(ledCnt[2].ToString()) / float.Parse(sumCnt.ToString());
+
+                lbProductCount1.Text = ledCnt[0].ToString();
+                lbProductCount2.Text = ledCnt[1].ToString();
+                lbProductCount3.Text = ledCnt[2].ToString();
+
+                lbProductPercent1.Text = string.Format("{0:P1}", perCnt1);
+                lbProductPercent2.Text = string.Format("{0:P1}", perCnt2);
+                lbProductPercent3.Text = string.Format("{0:P1}", perCnt3);
+
             }
-
-            sumCnt = ledCnt[0] + ledCnt[1] + ledCnt[2];
-
-            perCnt1 = float.Parse(ledCnt[0].ToString()) / float.Parse(sumCnt.ToString());
-            perCnt2 = float.Parse(ledCnt[1].ToString()) / float.Parse(sumCnt.ToString());
-            perCnt3 = float.Parse(ledCnt[2].ToString()) / float.Parse(sumCnt.ToString());
-
-            lbProductCount1.Text = ledCnt[0].ToString();
-            lbProductCount2.Text = ledCnt[1].ToString();
-            lbProductCount3.Text = ledCnt[2].ToString();
-
-            lbProductPercent1.Text = string.Format("{0:P1}", perCnt1);
-            lbProductPercent2.Text = string.Format("{0:P1}", perCnt2);
-            lbProductPercent3.Text = string.Format("{0:P1}", perCnt3);
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.StackTrace);
+            }
         }
 
         private void timer1_Tick_1(object sender, EventArgs e)
