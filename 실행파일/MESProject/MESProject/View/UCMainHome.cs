@@ -44,24 +44,20 @@ namespace MESProject.View
         float perCnt2 = 0;
         float perCnt3 = 0;
 
-        private void UCMainHome_Load(object sender, EventArgs e) //운수 -> 진영 -> 은수
+        private void UCMainHome_Load(object sender, EventArgs e) //은수 -> 진영 -> 은수
         {
             try
             {
+                //제품명 
+                List<string> pLightList = new List<string> { "light_001", "light_002", "light_003" };
                 DataSet ds = GetTblWork();
                 foreach (DataRow row in ds.Tables[0].Rows)
                 {
                     // 데이터베이스 칼럼 수정필
-                    string pNameTableRow = row[0].ToString();
-
-                    List<string> pLightList = new List<string> { "light_001", "light_002", "light_003" };
-                    if (pLightList.Contains(pNameTableRow))
+                    if (pLightList.Contains(row[0].ToString()))
                     {
-                        Console.WriteLine("UCMainHome_Load: 56 LINE " + row[1].ToString());
-                        Console.WriteLine("UCMainHome_Load: 56 LINE " + row[0].ToString());
-                        ledCnt[i] = int.Parse(row[1].ToString());
+                        ledCnt[i++] = int.Parse(row[1].ToString());
                         chartData.Series[0].Points.AddXY(row[0], row[1]);
-                        i++;
                     }
                 }
 
@@ -71,14 +67,16 @@ namespace MESProject.View
                 perCnt2 = float.Parse(ledCnt[1].ToString()) / float.Parse(sumCnt.ToString());
                 perCnt3 = float.Parse(ledCnt[2].ToString()) / float.Parse(sumCnt.ToString());
 
-                lbProductCount1.Text = ledCnt[0].ToString();
-                lbProductCount2.Text = ledCnt[1].ToString();
-                lbProductCount3.Text = ledCnt[2].ToString();
+                lbProductCount1.Text = ledCnt[0].ToString("N0");
+                lbProductCount2.Text = ledCnt[1].ToString("N0");
+                lbProductCount3.Text = ledCnt[2].ToString("N0");
 
                 lbProductPercent1.Text = string.Format("{0:P1}", perCnt1);
                 lbProductPercent2.Text = string.Format("{0:P1}", perCnt2);
                 lbProductPercent3.Text = string.Format("{0:P1}", perCnt3);
 
+                lbTotalCount.Text = sumCnt.ToString("N0");
+                lbTotalPercent.Text = string.Format("{0:P1}", perCnt1+ perCnt2 + perCnt3);
             }
             catch (Exception exception)
             {
