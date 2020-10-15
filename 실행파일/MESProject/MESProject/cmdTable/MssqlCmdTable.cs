@@ -48,5 +48,31 @@ namespace MESProject.cmdTable
             cmd.ExecuteNonQuery();
             DataSources.setClose();
         }
+
+        public DataTable doDataTable(DateTime dt1, DateTime dt2, string combotext, string text)  // 이상헌
+        {
+            DataSet ds = new DataSet();
+            SqlConnection conn = DataSources.getConnection();
+            try
+            {
+                SqlCommand cmd = new SqlCommand("exec SelectCTL @combotext, @boxtext, @t_end, @t_start", conn);
+                cmd.Parameters.AddWithValue("@combotext", combotext);
+                cmd.Parameters.AddWithValue("@boxtext", text);
+                cmd.Parameters.AddWithValue("@t_end", dt2);
+                cmd.Parameters.AddWithValue("@t_start", dt1);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                sda.Fill(ds);
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc.StackTrace);
+                return null;
+            }
+            finally
+            {
+                DataSources.setClose();
+            }
+            return ds.Tables[0];
+        }
     }
 }
