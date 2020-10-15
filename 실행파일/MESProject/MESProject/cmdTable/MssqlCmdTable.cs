@@ -55,7 +55,7 @@ namespace MESProject.cmdTable
             SqlConnection conn = DataSources.getConnection();
             try
             {
-                SqlCommand cmd = new SqlCommand("exec Selecttest @combotext, @boxtext, @t_end, @t_start", conn);
+                SqlCommand cmd = new SqlCommand("exec SelectCTL @combotext, @boxtext, @t_end, @t_start", conn);
                 cmd.Parameters.AddWithValue("@combotext", combotext);
                 cmd.Parameters.AddWithValue("@boxtext", text);
                 cmd.Parameters.AddWithValue("@t_end", dt2);
