@@ -24,6 +24,7 @@ namespace MESProject.View
 
         private void UCSelectWorkOrder_Load(object sender, EventArgs e)
         {
+            comboBoxSearch.Text = "종합";
             // 기본화면 1달간 조회 상태로 만들기 위해
             dateTimePicker1.Value = DateTime.Now.AddMonths(-1);
             dateTimePicker2.Value = DateTime.Now;
