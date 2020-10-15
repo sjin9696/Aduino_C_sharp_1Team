@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.uiImageButton1 = new Sunny.UI.UIImageButton();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.lbBlank = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -38,7 +37,6 @@
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.lbDate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -49,18 +47,6 @@
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(1154, 556);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // uiImageButton1
-            // 
-            this.uiImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiImageButton1.Image = global::MESProject.Properties.Resources.icons8_refresh_32px;
-            this.uiImageButton1.Location = new System.Drawing.Point(1132, 61);
-            this.uiImageButton1.Name = "uiImageButton1";
-            this.uiImageButton1.Size = new System.Drawing.Size(25, 25);
-            this.uiImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.uiImageButton1.TabIndex = 26;
-            this.uiImageButton1.TabStop = false;
-            this.uiImageButton1.Text = null;
             // 
             // dateTimePicker2
             // 
@@ -97,7 +83,7 @@
             // 
             this.comboBoxSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSearch.FormattingEnabled = true;
-            this.comboBoxSearch.Location = new System.Drawing.Point(823, 61);
+            this.comboBoxSearch.Location = new System.Drawing.Point(853, 61);
             this.comboBoxSearch.Name = "comboBoxSearch";
             this.comboBoxSearch.Size = new System.Drawing.Size(82, 25);
             this.comboBoxSearch.TabIndex = 21;
@@ -105,7 +91,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(1058, 61);
+            this.btnSearch.Location = new System.Drawing.Point(1088, 60);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(69, 25);
             this.btnSearch.TabIndex = 20;
@@ -116,7 +102,7 @@
             // textBoxSearch
             // 
             this.textBoxSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.Location = new System.Drawing.Point(911, 61);
+            this.textBoxSearch.Location = new System.Drawing.Point(941, 61);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(141, 25);
             this.textBoxSearch.TabIndex = 19;
@@ -137,7 +123,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lbDate);
-            this.Controls.Add(this.uiImageButton1);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.lbBlank);
             this.Controls.Add(this.dateTimePicker1);
@@ -149,7 +134,6 @@
             this.Size = new System.Drawing.Size(1160, 681);
             this.Load += new System.EventHandler(this.UCSelectWorkOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uiImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,7 +141,6 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private Sunny.UI.UIImageButton uiImageButton1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label lbBlank;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
