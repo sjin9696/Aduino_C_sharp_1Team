@@ -31,22 +31,22 @@
             this.components = new System.ComponentModel.Container();
             this.pnLeft = new System.Windows.Forms.Panel();
             this.lbDBIP = new System.Windows.Forms.Label();
-            this.lbNowDate = new System.Windows.Forms.Label();
-            this.lbDate = new System.Windows.Forms.Label();
-            this.lbIPNum = new System.Windows.Forms.Label();
-            this.pnTop = new System.Windows.Forms.Panel();
-            this.lbProgramName = new System.Windows.Forms.Label();
-            this.pnCenter = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnShutDown = new System.Windows.Forms.Button();
             this.btnWCSelect = new System.Windows.Forms.Button();
             this.btnWOSelect = new System.Windows.Forms.Button();
+            this.lbNowDate = new System.Windows.Forms.Label();
+            this.lbDate = new System.Windows.Forms.Label();
             this.btnWOinsert = new System.Windows.Forms.Button();
+            this.lbIPNum = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
+            this.pnTop = new System.Windows.Forms.Panel();
+            this.lbProgramName = new System.Windows.Forms.Label();
+            this.pnCenter = new System.Windows.Forms.Panel();
             this.ucMainHome1 = new MESProject.View.UCMainHome();
             this.ucSelectWorkOrder1 = new MESProject.View.UCSelectWorkOrder();
             this.ucSelectWorkComplete1 = new MESProject.View.UCSelectWorkComplete();
             this.ucInsertWorkOrder1 = new MESProject.View.UCInsertWorkOrder();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnLeft.SuspendLayout();
             this.pnTop.SuspendLayout();
             this.pnCenter.SuspendLayout();
@@ -74,84 +74,12 @@
             // 
             this.lbDBIP.AutoSize = true;
             this.lbDBIP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDBIP.ForeColor = System.Drawing.Color.Black;
+            this.lbDBIP.ForeColor = System.Drawing.Color.White;
             this.lbDBIP.Location = new System.Drawing.Point(849, 24);
             this.lbDBIP.Name = "lbDBIP";
             this.lbDBIP.Size = new System.Drawing.Size(45, 17);
             this.lbDBIP.TabIndex = 4;
             this.lbDBIP.Text = "DB IP :";
-            // 
-            // lbNowDate
-            // 
-            this.lbNowDate.AutoSize = true;
-            this.lbNowDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNowDate.ForeColor = System.Drawing.Color.Black;
-            this.lbNowDate.Location = new System.Drawing.Point(922, 6);
-            this.lbNowDate.Name = "lbNowDate";
-            this.lbNowDate.Size = new System.Drawing.Size(126, 17);
-            this.lbNowDate.TabIndex = 1;
-            this.lbNowDate.Text = "2020-10-12 12:12:12";
-            // 
-            // lbDate
-            // 
-            this.lbDate.AutoSize = true;
-            this.lbDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDate.ForeColor = System.Drawing.Color.Black;
-            this.lbDate.Location = new System.Drawing.Point(849, 6);
-            this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(67, 17);
-            this.lbDate.TabIndex = 3;
-            this.lbDate.Text = "현재시간 :";
-            // 
-            // lbIPNum
-            // 
-            this.lbIPNum.AutoSize = true;
-            this.lbIPNum.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIPNum.ForeColor = System.Drawing.Color.Black;
-            this.lbIPNum.Location = new System.Drawing.Point(968, 24);
-            this.lbIPNum.Name = "lbIPNum";
-            this.lbIPNum.Size = new System.Drawing.Size(80, 17);
-            this.lbIPNum.TabIndex = 2;
-            this.lbIPNum.Text = "192.168.0.19";
-            // 
-            // pnTop
-            // 
-            this.pnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(114)))), ((int)(((byte)(210)))));
-            this.pnTop.Controls.Add(this.lbProgramName);
-            this.pnTop.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnTop.Location = new System.Drawing.Point(0, 0);
-            this.pnTop.Name = "pnTop";
-            this.pnTop.Size = new System.Drawing.Size(278, 50);
-            this.pnTop.TabIndex = 1;
-            // 
-            // lbProgramName
-            // 
-            this.lbProgramName.AutoSize = true;
-            this.lbProgramName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProgramName.ForeColor = System.Drawing.Color.White;
-            this.lbProgramName.Location = new System.Drawing.Point(6, 6);
-            this.lbProgramName.Name = "lbProgramName";
-            this.lbProgramName.Size = new System.Drawing.Size(269, 32);
-            this.lbProgramName.TabIndex = 1;
-            this.lbProgramName.Text = "작업지시 프로그램 傑作";
-            // 
-            // pnCenter
-            // 
-            this.pnCenter.BackColor = System.Drawing.Color.White;
-            this.pnCenter.Controls.Add(this.ucMainHome1);
-            this.pnCenter.Controls.Add(this.ucSelectWorkOrder1);
-            this.pnCenter.Controls.Add(this.ucSelectWorkComplete1);
-            this.pnCenter.Controls.Add(this.ucInsertWorkOrder1);
-            this.pnCenter.Location = new System.Drawing.Point(12, 68);
-            this.pnCenter.Name = "pnCenter";
-            this.pnCenter.Size = new System.Drawing.Size(1160, 681);
-            this.pnCenter.TabIndex = 2;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // btnShutDown
             // 
@@ -224,6 +152,28 @@
             this.btnWOSelect.UseVisualStyleBackColor = false;
             this.btnWOSelect.Click += new System.EventHandler(this.btnWOSelect_Click);
             // 
+            // lbNowDate
+            // 
+            this.lbNowDate.AutoSize = true;
+            this.lbNowDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNowDate.ForeColor = System.Drawing.Color.White;
+            this.lbNowDate.Location = new System.Drawing.Point(922, 6);
+            this.lbNowDate.Name = "lbNowDate";
+            this.lbNowDate.Size = new System.Drawing.Size(126, 17);
+            this.lbNowDate.TabIndex = 1;
+            this.lbNowDate.Text = "2020-10-12 12:12:12";
+            // 
+            // lbDate
+            // 
+            this.lbDate.AutoSize = true;
+            this.lbDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.ForeColor = System.Drawing.Color.White;
+            this.lbDate.Location = new System.Drawing.Point(849, 6);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(67, 17);
+            this.lbDate.TabIndex = 3;
+            this.lbDate.Text = "현재시간 :";
+            // 
             // btnWOinsert
             // 
             this.btnWOinsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
@@ -248,6 +198,17 @@
             this.btnWOinsert.UseVisualStyleBackColor = false;
             this.btnWOinsert.Click += new System.EventHandler(this.btnWOinsert_Click);
             // 
+            // lbIPNum
+            // 
+            this.lbIPNum.AutoSize = true;
+            this.lbIPNum.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIPNum.ForeColor = System.Drawing.Color.White;
+            this.lbIPNum.Location = new System.Drawing.Point(968, 24);
+            this.lbIPNum.Name = "lbIPNum";
+            this.lbIPNum.Size = new System.Drawing.Size(80, 17);
+            this.lbIPNum.TabIndex = 2;
+            this.lbIPNum.Text = "192.168.0.19";
+            // 
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(91)))), ((int)(((byte)(97)))));
@@ -268,6 +229,39 @@
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // pnTop
+            // 
+            this.pnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(114)))), ((int)(((byte)(210)))));
+            this.pnTop.Controls.Add(this.lbProgramName);
+            this.pnTop.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnTop.Location = new System.Drawing.Point(0, 0);
+            this.pnTop.Name = "pnTop";
+            this.pnTop.Size = new System.Drawing.Size(278, 50);
+            this.pnTop.TabIndex = 1;
+            // 
+            // lbProgramName
+            // 
+            this.lbProgramName.AutoSize = true;
+            this.lbProgramName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProgramName.ForeColor = System.Drawing.Color.White;
+            this.lbProgramName.Location = new System.Drawing.Point(6, 6);
+            this.lbProgramName.Name = "lbProgramName";
+            this.lbProgramName.Size = new System.Drawing.Size(269, 32);
+            this.lbProgramName.TabIndex = 1;
+            this.lbProgramName.Text = "작업지시 프로그램 傑作";
+            // 
+            // pnCenter
+            // 
+            this.pnCenter.BackColor = System.Drawing.Color.White;
+            this.pnCenter.Controls.Add(this.ucMainHome1);
+            this.pnCenter.Controls.Add(this.ucSelectWorkOrder1);
+            this.pnCenter.Controls.Add(this.ucSelectWorkComplete1);
+            this.pnCenter.Controls.Add(this.ucInsertWorkOrder1);
+            this.pnCenter.Location = new System.Drawing.Point(12, 68);
+            this.pnCenter.Name = "pnCenter";
+            this.pnCenter.Size = new System.Drawing.Size(1160, 681);
+            this.pnCenter.TabIndex = 2;
             // 
             // ucMainHome1
             // 
@@ -304,6 +298,12 @@
             this.ucInsertWorkOrder1.Name = "ucInsertWorkOrder1";
             this.ucInsertWorkOrder1.Size = new System.Drawing.Size(1160, 681);
             this.ucInsertWorkOrder1.TabIndex = 0;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
