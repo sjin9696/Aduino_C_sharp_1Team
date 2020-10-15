@@ -148,16 +148,16 @@ namespace MESProject.View
                 if(info.Type == DataGridViewHitTestType.Cell)
                 {
                     ContextMenuStrip mnu = new ContextMenuStrip();
-                    ToolStripMenuItem mnuUpdate = new ToolStripMenuItem("Update");
-                    ToolStripMenuItem mnuCut = new ToolStripMenuItem("Cut");
+                    //ToolStripMenuItem mnuUpdate = new ToolStripMenuItem("수정");
+                    ToolStripMenuItem mnuCut = new ToolStripMenuItem("삭제");
                     
 
                     //Assign event handlers
-                    mnuUpdate.Click += new EventHandler(mnuUpdate_Click);
+                    //mnuUpdate.Click += new EventHandler(mnuUpdate_Click);
                     mnuCut.Click += new EventHandler(mnuCut_Click);
 
                     //Add to main context menu
-                    mnu.Items.AddRange(new ToolStripItem[] { mnuUpdate, mnuCut });
+                    mnu.Items.AddRange(new ToolStripItem[] { /*mnuUpdate,*/ mnuCut });
 
                     //Assign to datagridview
                     dgvWorkOrder.ContextMenuStrip = mnu;
@@ -169,12 +169,15 @@ namespace MESProject.View
             }
             
         }
-        private void mnuUpdate_Click(object sender, EventArgs e)
-        {//아직구현안됨
-            //DataGridView dv = dgvWorkOrder;
-            //dgvWorkOrder.ReadOnly = false;
-            //Console.WriteLine(i_SelRow+"");
-        }
+        //private void mnuUpdate_Click(object sender, EventArgs e)
+        //{
+        //    foreach (DataGridViewRow row in dgvWorkOrder.Rows)
+        //    {
+        //        row.ReadOnly = true;
+        //    }
+        //    dgvWorkOrder.Rows[i_SelRow].ReadOnly = false;
+        //    dgvWorkOrder.BeginEdit(true);
+        //}
         private void mnuCut_Click(object sender, EventArgs e)
         {
             DataGridView dv = dgvWorkOrder;
