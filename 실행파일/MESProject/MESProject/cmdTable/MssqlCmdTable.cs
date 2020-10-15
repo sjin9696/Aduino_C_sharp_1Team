@@ -16,6 +16,9 @@ namespace MESProject.cmdTable
         {
             SqlConnection conn = DataSources.getConnection();
             SqlCommand cmd = new SqlCommand("exec proc_SelectWorkorder", conn);
+            //SqlCommand cmd = new SqlCommand("exec proc_SelectWorkorder @firstDate @secondDate", conn);
+            //cmd.Parameters.AddWithValue("@firstDate", firstDate);
+            //cmd.Parameters.AddWithValue("@secondDate", secondDate);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             sda.Fill(ds);

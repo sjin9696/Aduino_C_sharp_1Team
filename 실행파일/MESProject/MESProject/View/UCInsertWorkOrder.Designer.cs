@@ -39,11 +39,11 @@
             this.lbTimeLimit = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.lbProductName = new System.Windows.Forms.Label();
-            this.tbProductName = new System.Windows.Forms.TextBox();
             this.lbCustomer = new System.Windows.Forms.Label();
             this.lbOrnerName = new System.Windows.Forms.Label();
             this.tbCustomer = new System.Windows.Forms.TextBox();
             this.tbOrnerName = new System.Windows.Forms.TextBox();
+            this.cbProductName = new System.Windows.Forms.ComboBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.pnOrderInsert = new System.Windows.Forms.Panel();
             this.lbOrderInsert = new System.Windows.Forms.Label();
@@ -93,11 +93,11 @@
             this.tlbWorkOrder.Controls.Add(this.lbTimeLimit, 0, 3);
             this.tlbWorkOrder.Controls.Add(this.dateTimePicker2, 1, 3);
             this.tlbWorkOrder.Controls.Add(this.lbProductName, 2, 3);
-            this.tlbWorkOrder.Controls.Add(this.tbProductName, 3, 3);
             this.tlbWorkOrder.Controls.Add(this.lbCustomer, 2, 0);
             this.tlbWorkOrder.Controls.Add(this.lbOrnerName, 2, 1);
             this.tlbWorkOrder.Controls.Add(this.tbCustomer, 3, 0);
             this.tlbWorkOrder.Controls.Add(this.tbOrnerName, 3, 1);
+            this.tlbWorkOrder.Controls.Add(this.cbProductName, 3, 3);
             this.tlbWorkOrder.Location = new System.Drawing.Point(140, 47);
             this.tlbWorkOrder.Name = "tlbWorkOrder";
             this.tlbWorkOrder.RowCount = 6;
@@ -197,14 +197,6 @@
             this.lbProductName.Text = "제품명 :";
             this.lbProductName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tbProductName
-            // 
-            this.tbProductName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbProductName.Location = new System.Drawing.Point(646, 117);
-            this.tbProductName.Name = "tbProductName";
-            this.tbProductName.Size = new System.Drawing.Size(226, 25);
-            this.tbProductName.TabIndex = 15;
-            // 
             // lbCustomer
             // 
             this.lbCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
@@ -243,6 +235,18 @@
             this.tbOrnerName.Size = new System.Drawing.Size(226, 25);
             this.tbOrnerName.TabIndex = 14;
             // 
+            // cbProductName
+            // 
+            this.cbProductName.FormattingEnabled = true;
+            this.cbProductName.Items.AddRange(new object[] {
+            "light_001",
+            "light_002",
+            "light_003"});
+            this.cbProductName.Location = new System.Drawing.Point(646, 117);
+            this.cbProductName.Name = "cbProductName";
+            this.cbProductName.Size = new System.Drawing.Size(226, 20);
+            this.cbProductName.TabIndex = 24;
+            // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
@@ -254,6 +258,7 @@
             this.btnClear.TabIndex = 21;
             this.btnClear.Text = "클리어";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // pnOrderInsert
             // 
@@ -417,6 +422,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn rm;
         private System.Windows.Forms.Label lbOrderInsert;
         private System.Windows.Forms.Label lbConfirmOrder;
-        private System.Windows.Forms.TextBox tbProductName;
+        private System.Windows.Forms.ComboBox cbProductName;
     }
 }
