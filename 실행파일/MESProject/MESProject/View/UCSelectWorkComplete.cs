@@ -53,7 +53,7 @@ namespace MESProject.View
         private void dtpSecondDate_ValueChanged(object sender, EventArgs e)
         {
             //2020-10-15 오전 11:34:26 -> 2020-10-16 오전 12:00:00
-            this.tend = dtpSecondDate.Value.Date;
+            this.tend = dtpSecondDate.Value.Date.AddDays(1);
             Console.WriteLine(this.tend);
         }
 

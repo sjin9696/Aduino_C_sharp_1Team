@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MESProject.cmdTable;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace MESProject.View
 {
@@ -47,23 +48,37 @@ namespace MESProject.View
             //    Console.WriteLine(exp.Message);
             //}
 
+            DialogResult dr = MessageBox.Show("업로드하시겠습니까?", "알림", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
 
-            for(int i=0;i<dgvWorkOrder.Rows.Count-1;i++)
+            if (dr == DialogResult.OK)
             {
-                mscmd.DBInsert
-                    (
-                    dgvWorkOrder.Rows[i].Cells[1].Value.ToString(),//담당자
-                    DateTime.Parse(dgvWorkOrder.Rows[i].Cells[0].Value.ToString()),//지시일
-                    DateTime.Parse(dgvWorkOrder.Rows[i].Cells[2].Value.ToString()),//기한일
-                    dgvWorkOrder.Rows[i].Cells[3].Value as string,//제품명(combobox에 데이터는 이렇게 처리)
-                    int.Parse(dgvWorkOrder.Rows[i].Cells[4].Value.ToString()),//제품수량
-                    dgvWorkOrder.Rows[i].Cells[5].Value.ToString(),//회사명
-                    dgvWorkOrder.Rows[i].Cells[6].Value.ToString()//비고
-                    );
+                if (dgvWorkOrder.Rows.Count == 1)
+                {
+                    MessageBox.Show("추가할 데이터가 없습니다.");
+                    
+                }
+                else
+                {
+                    for (int i = 0; i < dgvWorkOrder.Rows.Count - 1; i++)
+                    {
+                        mscmd.DBInsert
+                        (
+                        dgvWorkOrder.Rows[i].Cells[1].Value.ToString(),//담당자
+                        DateTime.Parse(dgvWorkOrder.Rows[i].Cells[0].Value.ToString()),//지시일
+                        DateTime.Parse(dgvWorkOrder.Rows[i].Cells[2].Value.ToString()),//기한일
+                        dgvWorkOrder.Rows[i].Cells[3].Value as string,//제품명(combobox에 데이터는 이렇게 처리)
+                        int.Parse(dgvWorkOrder.Rows[i].Cells[4].Value.ToString()),//제품수량
+                        dgvWorkOrder.Rows[i].Cells[5].Value.ToString(),//회사명
+                        dgvWorkOrder.Rows[i].Cells[6].Value.ToString()//비고
+                        );
+                    }
+                    MessageBox.Show("정상적으로 업로드되었습니다.");
+                }
             }
-
-
-
+            else
+            {
+                MessageBox.Show("정상적으로 취소되었습니다.");
+            }
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
